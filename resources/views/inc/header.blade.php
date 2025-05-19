@@ -104,7 +104,7 @@
                <div class="col-md-10">
                   <div class="nav header-navbar header-2">
                      <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav menu-marker-arrow">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="{{ url('') }}">Home</a></li>
                         <li class="dropdown">
                            <a href="vehicle-listings.html">Tires Listings</a>
                            <ul class="dropdown-menu">
