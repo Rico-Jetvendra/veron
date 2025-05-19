@@ -114,7 +114,7 @@
 <script src="{{ asset('plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js') }}"></script>
 <!-- Pop-up window-->
 <script src="{{ asset('plugins/prettyphoto/js/jquery.prettyPhoto.js') }}"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <!-- Animations-->
 <script src="{{ asset('plugins/wow.min.js') }}"></script>
 <!-- NoUiSlider-->
