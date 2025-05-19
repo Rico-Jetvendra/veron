@@ -19,7 +19,7 @@
          <span></span> <span></span></span>
          </button>
          <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav  menu-marker-arrow">
-            <li><a href="/">Home</a></li>
+            <li><a href="{{ url('') }}">Home</a></li>
             <li class="dropdown">
                <a href="vehicle-listings.html">Vehicle Listings</a>
                <ul class="dropdown-menu">
@@ -35,7 +35,7 @@
                   <li><a href="blog.html">English</a></li>
                </ul>
             </li>
-            <li class=""><a href="contact.html">Contact</a></li>
+            <li class=""><a href="{{ url('contact') }}">Contact</a></li>
          </ul>
       </div>
       <!-- ========================== -->
@@ -114,7 +114,7 @@
                            </ul>
                         </li>
                         <li class="#"><a href="contact.html">About Us</a></li>
-                        <li class="#"><a href="/contact">Contact</a></li>
+                        <li class="#"><a href="{{ url('contact') }}">Contact</a></li>
                      </ul>
                   </div>
                </div>
