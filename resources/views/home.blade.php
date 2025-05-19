@@ -1,0 +1,702 @@
+@include('inc.header', ['title' => 'Dashboard'])
+
+<div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="950px" data-slider-arrows="true" data-slider-buttons="false">
+   <div class="sp-slides">
+      <!-- Slide 1-->
+      <div class="sp-slide">
+         <div class="b-main-slider__item b-main-slider__item_2">
+            <img class="sp-image" src="{{ asset('media/b-main-slider/slider-repair01.jpg') }}" alt="slider" />
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">fix your auto, faster</span></div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
+               <div class="b-main-slider__title">WANT REPAIR CAR?</div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="800" data-hide-delay="400">
+               <div class="b-main-slider__info">We deliver highest level of satisfaction
+                  through superior workmanship
+               </div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400">
+               <div class="b-main-slider__btns"><span class="b-main-slider__btn">What We Offers</span></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- end b-main-slider -->
+<div class="block_repairs ">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="ui-wrap-figure">
+               <span class="ui-top-figure"></span>
+            </div>
+         </div>
+      </div>
+      <div class="row block_padding_top">
+         <div class="col-md-6">
+            <div class="block-repairs_img">
+               <img src="{{ asset('media/b-gallery/repairman03.jpg') }}"/>
+               <div class="block-repairs_img-hover">
+                  <span>Committed To Ensure Full Safety</span>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6">
+            <div class="block-repairs_header">
+               <h2>Legaster <span>Auto Repairs</span></h2>
+               <span>A Trusted Name in Auto Repair Industry</span>
+            </div>
+            <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla pariatur
+               excepteur sint occaecat. Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+               giusmod tempor incididuntu labore et dolore magna.
+            </p>
+            <ul class="b-about-list list-unstyled">
+               <li class="b-about-list__item">
+                  <i class="ic flaticon-car"></i>
+                  <span class="b-about-list__inner">
+                  <span class="b-about-list__title">Affordable Auto Prices</span>
+                  <span class="b-about-list__info">Legaster is nisi aliquip consequat duis velit esse</span>
+                  </span>
+               </li>
+               <li class="b-about-list__item">
+                  <i class="ic flaticon-bag"></i>
+                  <span class="b-about-list__inner">
+                  <span class="b-about-list__title">10 Years in Business</span>
+                  <span class="b-about-list__info">Legaster is nisi aliquip consequat duis velit esse</span>
+                  </span>
+               </li>
+               <li class="b-about-list__item">
+                  <i class="ic flaticon-handshake"></i>
+                  <span class="b-about-list__inner">
+                  <span class="b-about-list__title">Trusted by Auto Buyers</span>
+                  <span class="b-about-list__info">Legaster is nisi aliquip consequat duis velit esse</span>
+                  </span>
+               </li>
+            </ul>
+         </div>
+         <div class="col-md-12">
+            <div class="block-repairs_stats">
+               <ul>
+                  <li>
+                     <div class="block-repairs_stat">
+                        <h2>6.2M</h2>
+                        <span>Satisfy Customers</span>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="block-repairs_stat">
+                        <h2>3.5M</h2>
+                        <span>Vehicles Repaired</span>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="block-repairs_stat">
+                        <h2>24/7</h2>
+                        <span>Workshop Service</span>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="block-repairs_stat">
+                        <h2>99%</h2>
+                        <span>In-Time Delivery</span>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="block-banner">
+   <div class="row">
+      <div class="col-md-6">
+         <div class="block-banner_banner-1">
+            <h2>Our mechenics
+               are always<br> busy to repair & fix
+            </h2>
+            <p>Nisi aliquip duis velit  exceptur sint ocecat lorem ipsm eiusmod tempor velit
+               cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amets consecte
+               adipisicing elit sed do eiusmod tempor incididunt.
+            </p>
+            <ul>
+               <li><i class="fa fa-check" aria-hidden="true"></i>Mobile workshop facility</li>
+               <li><i class="fa fa-check" aria-hidden="true"></i>All autos support free insured</li>
+               <li><i class="fa fa-check" aria-hidden="true"></i>Licensed and well-educated mechanics</li>
+               <li><i class="fa fa-check" aria-hidden="true"></i>365 Days emergency repair service</li>
+               <li><i class="fa fa-check" aria-hidden="true"></i>Complete autos repair summary</li>
+            </ul>
+         </div>
+      </div>
+      <div class="col-md-2 reset_padding">
+         <div class="block-banner_banner-2">
+            <div class="block-banner_icon">
+               <a href="#">
+                  <div class="glyph-icon flaticon-steering-wheel block-banner_banner-icon"></div>
+               </a>
+               <span>Auto Body Repair</span>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-2 reset_padding">
+         <div class="block-banner_banner-3">
+            <div class="block-banner_icon">
+               <a href="#">
+                  <div class="glyph-icon flaticon-work block-banner_banner-icon"></div>
+               </a>
+               <span>Full Auto Service</span>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-2 reset_padding">
+         <div class="block-banner_banner-4">
+            <div class="block-banner_icon">
+               <a href="#">
+                  <div class="glyph-icon flaticon-suspension block-banner_banner-icon"></div>
+               </a>
+               <span>Wheels & Tyres</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="help-block block_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-2"></div>
+         <div class="col-md-8">
+            <div class="help-block_content">
+               <h3>We Offer Full Range of Services in<br>
+                  Case of Any Accident & Auto Body Repair
+               </h3>
+               <div class="decor"></div>
+               <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla pariatur excepteur sint aecat orem ipsum dolor
+                  sit amet consectetur adipisicing elit sed eiusmod tempor incididuntu labore dolore magna aliqua
+               </p>
+            </div>
+         </div>
+         <div class="col-md-2"></div>
+         <div class="col-xs-12">
+            <div class="help-block_banners">
+               <div class="col-md-4">
+                  <div class="help-block_banner">
+                     <div class="glyph-icon flaticon-steering-wheel help-block_banner-icon"></div>
+                     <h3>Largest Auto Workshop</h3>
+                     <p>Carentar is nisi aliquip ex consequat duis
+                        velit esse cillum dolore fugiat nulla pariatur
+                        excepteur sint occaecat.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="help-block_banner">
+                     <div class="glyph-icon flaticon-gearshift help-block_banner-icon"></div>
+                     <h3>Repairs Everything</h3>
+                     <p>Carentar is nisi aliquip ex consequat duis
+                        velit esse cillum dolore fugiat nulla pariatur
+                        excepteur sint occaecat.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="help-block_banner">
+                     <div class="glyph-icon flaticon-work help-block_banner-icon"></div>
+                     <h3>Multipoint Safety Checks</h3>
+                     <p>Carentar is nisi aliquip ex consequat duis
+                        velit esse cillum dolore fugiat nulla pariatur
+                        excepteur sint occaecat.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12">
+            <div class="help-block_buttons">
+               <div class="col-md-2 arrow-left">
+                  <img src="{{ asset('media/b-gallery/arr-l.png') }}"/>
+               </div>
+               <div class="col-md-8">
+                  <div class="help-block_button">
+                     <a href="#" class="btn button_help">
+                     <span class="filter-disc-btn pull-left">Uncover Your Auto Potential With Legaster Auto Repair</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-2 arrow-right">
+                  <img src="{{ asset('media/b-gallery/arr-r.png') }}"/>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="info-block block_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="info-block_header">
+               <h2>We Repair Your  <span>Vehicle</span></h2>
+               <span>Best vehicle body repair & all related fixes</span>
+               <div class="decor"></div>
+            </div>
+         </div>
+         <div class="col-xs-12">
+            <div class="info-block_choose">
+               <div class="col-md-3">
+                  <div class="info-block_choose-item">
+                     <div class="glyph-icon flaticon-car-suv info-block_icon"></div>
+                     <span>VANS & TRUCKS</span>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="info-block_choose-item">
+                     <div class="glyph-icon flaticon-coupe-car info-block_icon"></div>
+                     <span>SPORTS CARS</span>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="info-block_choose-item">
+                     <div class="glyph-icon flaticon-pick-up info-block_icon"></div>
+                     <span>SUVS & PICKUPS</span>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="info-block_choose-item">
+                     <div class="glyph-icon flaticon-sedan-car-model info-block_icon"></div>
+                     <span>ALL SEDANS</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12">
+            <div class="block_banners">
+               <div class="col-md-4">
+                  <a href="#" class="block_banner_link">
+                     <div class="block_banner">
+                        <div class="glyph-icon flaticon-suspension info-block_banner-icon"></div>
+                        <div class="block-banner_content">
+                           <h3>Brakes Repair</h3>
+                           <span>Corem ipsum dolor it amet consec exea
+                           dolore fugiatmagna exerd.</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4">
+                  <a href="#" class="block_banner_link">
+                     <div class="block_banner">
+                        <div class="glyph-icon flaticon-engine info-block_banner-icon"></div>
+                        <div class="block-banner_content">
+                           <h3>Head Gaskets</h3>
+                           <span>Corem ipsum dolor it amet consec exea
+                           dolore fugiatmagna exerd.</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4">
+                  <a href="#" class="block_banner_link">
+                     <div class="block_banner">
+                        <div class="glyph-icon flaticon-dashboard info-block_banner-icon"></div>
+                        <div class="block-banner_content">
+                           <h3>General Service</h3>
+                           <span>Corem ipsum dolor it amet consec exea
+                           dolore fugiatmagna exerd.</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4">
+                  <a href="#" class="block_banner_link">
+                     <div class="block_banner">
+                        <div class="glyph-icon flaticon-gearshift info-block_banner-icon"></div>
+                        <div class="block-banner_content">
+                           <h3>Transmission Fix</h3>
+                           <span>Corem ipsum dolor it amet consec exea
+                           dolore fugiatmagna exerd.</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4">
+                  <a href="#" class="block_banner_link">
+                     <div class="block_banner">
+                        <div class="glyph-icon flaticon-checklist info-block_banner-icon"></div>
+                        <div class="block-banner_content">
+                           <h3>Electric Breakdown</h3>
+                           <span>Corem ipsum dolor it amet consec exea
+                           dolore fugiatmagna exerd.</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4">
+                  <a href="#" class="block_banner_link">
+                     <div class="block_banner">
+                        <div class="glyph-icon flaticon-oil info-block_banner-icon"></div>
+                        <div class="block-banner_content">
+                           <h3>Oil Changing</h3>
+                           <span>Corem ipsum dolor it amet consec exea
+                           dolore fugiatmagna exerd.</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="recent-block block_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="recent-block_header">
+               <h2>Recent Auto <span>Projects</span></h2>
+               <span>At workshop vehicle body repair & all related fixes</span>
+               <div class="decor"></div>
+            </div>
+            <div class="recent-block_gallery">
+               <div class="col-md-6">
+                  <div class="col-md-12 gallery_item">
+                     <img src="{{ asset('media/b-gallery/rep_1.jpg') }}"/>
+                  </div>
+                  <div class="col-md-12 gallery_item">
+                     <img src="{{ asset('media/b-gallery/rep_2.jpg') }}"/>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="col-md-12 gallery_item">
+                     <img src="{{ asset('media/b-gallery/rep_4.jpg') }}"/>
+                  </div>
+                  <div class="col-md-12 gallery_item">
+                     <img src="{{ asset('media/b-gallery/rep_5.jpg') }}"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12">
+            <div class="recent-block_button">
+               <a href="#">
+               <i class="fa fa-arrow-right" aria-hidden="true"></i>
+               <span>MORE PROJECTS</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="contact-block block_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="contact-block_header">
+               <span>Does your auto needs better repair experts?</span>
+               <h2>HIGH-QUALITY & WELL TRAINED REPAIR CENTRES </h2>
+            </div>
+            <div class="contact-block_content">
+               <div class="contact-block_number">
+                  <p>Call us & Get Free Estimate <span>1.800.12345</span></p>
+               </div>
+               <div class="contact-block_button">
+                  <button type="button" class="btn button_contact" title="number"/>
+                  <span class="filter-disc-btn pull-left">Schedule Checkup</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="faq-block block_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="ui-wrap-figure">
+               <span class="ui-top-figure"></span>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12">
+               <div class="faq-block_header">
+                  <h2>Our Service <span>FAQ's</span></h2>
+                  <span>At our workshop vehicle body repair & all related fixes </span>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <div class="faq-block_content">
+                  <details>
+                     <summary>What type of Services do I need?</summary>
+                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
+                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
+                        giusmod tempor incididuntu labore et dolore magna.
+                     </p>
+                  </details>
+                  <details>
+                     <summary>How do I keep track of routine maintenance?</summary>
+                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
+                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
+                        giusmod tempor incididuntu labore et dolore magna.
+                     </p>
+                  </details>
+                  <details>
+                     <summary>What are the latest offers you have currently?</summary>
+                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
+                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
+                        giusmod tempor incididuntu labore et dolore magna.
+                     </p>
+                  </details>
+                  <details>
+                     <summary>How many hours you work daily?</summary>
+                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
+                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
+                        giusmod tempor incididuntu labore et dolore magna.
+                     </p>
+                  </details>
+                  <details>
+                     <summary>How do you repair cars that are accidental?</summary>
+                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
+                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
+                        giusmod tempor incididuntu labore et dolore magna.
+                     </p>
+                  </details>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="faq-block_video">
+                  <img src="{{ asset('media/b-gallery/man_1.jpg') }}"/>
+                  <a href="#">
+                     <div class="faq-block_video-play">
+                        <span><i class="fa fa-play faq-block_icon" aria-hidden="true"></i>Committed To Ensure Full Safety</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="comment-block block_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="comment-block_header">
+               <h2>What Customers <span>Says</span></h2>
+               <span>At our workshop vehicle body repair & all related fixes </span>
+               <div class="decor"></div>
+            </div>
+         </div>
+         <div class="reviews-slider">
+            <div class="owl-carousel owl-theme enable-owl-carousel"
+               data-min480="2"
+               data-min768="3"
+               data-min992="3"
+               data-min1200="3"
+               data-pagination="true"
+               data-navigation="false"
+               data-auto-play="400000"
+               data-stop-on-hover="true">
+               <div class="comment-block_item">
+                  <img src="{{ asset('media/b-reiews/1.jpg') }}" />
+                  <h4>KANE JOSEPH</h4>
+                  <span>CUSTOMER</span>
+                  <p>Legaster is urn sed vel nullamys semper
+                     vestibulum fringilla orem ipsum dolor sit amet
+                     sectetur adipisicing elit aiusmod.
+                  </p>
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+               </div>
+               <div class="comment-block_item">
+                  <img src="{{ asset('media/b-reiews/2.jpg') }}" />
+                  <h4>KANE JOSEPH</h4>
+                  <span>CUSTOMER</span>
+                  <p>Legaster is urn sed vel nullamys semper
+                     vestibulum fringilla orem ipsum dolor sit amet
+                     sectetur adipisicing elit aiusmod.
+                  </p>
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+               </div>
+               <div class="comment-block_item">
+                  <img src="{{ asset('media/b-reiews/3.jpg') }}" />
+                  <h4>KANE JOSEPH</h4>
+                  <span>CUSTOMER</span>
+                  <p>Legaster is urn sed vel nullamys semper
+                     vestibulum fringilla orem ipsum dolor sit amet
+                     sectetur adipisicing elit aiusmod.
+                  </p>
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+               </div>
+               <div class="comment-block_item">
+                  <img src="{{ asset('media/b-reiews/1.jpg') }}" />
+                  <h4>KANE JOSEPH</h4>
+                  <span>CUSTOMER</span>
+                  <p>Legaster is urn sed vel nullamys semper
+                     vestibulum fringilla orem ipsum dolor sit amet
+                     sectetur adipisicing elit aiusmod.
+                  </p>
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+               </div>
+               <div class="comment-block_item">
+                  <img src="{{ asset('media/b-reiews/2.jpg') }}" />
+                  <h4>KANE JOSEPH</h4>
+                  <span>CUSTOMER</span>
+                  <p>Legaster is urn sed vel nullamys semper
+                     vestibulum fringilla orem ipsum dolor sit amet
+                     sectetur adipisicing elit aiusmod.
+                  </p>
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+               </div>
+               <div class="comment-block_item">
+                  <img src="{{ asset('media/b-reiews/3.jpg') }}" />
+                  <h4>KANE JOSEPH</h4>
+                  <span>CUSTOMER</span>
+                  <p>Legaster is urn sed vel nullamys semper
+                     vestibulum fringilla orem ipsum dolor sit amet
+                     sectetur adipisicing elit aiusmod.
+                  </p>
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="block-repair-news block_padding bg-white">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="block-repair-news_header">
+               <h2>Read Blog <span>News</span></h2>
+               <span>Excellent experience both picking up & dropping off</span>
+               <div class="decor"></div>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-12">
+            <div class="block-repair-news_post">
+               <div class="row">
+                  <div class="col-md-3">
+                     <img src="{{ asset('media/b-gallery/car_5.jpg') }}" />
+                  </div>
+                  <div class="col-md-9">
+                     <div class="block-repair-news_post_footer">
+                        <div class="post-autor">
+                           <div class="post_data">
+                              <span>26 SEP</span>
+                           </div>
+                           <div class="autor">
+                              <span><i class="fa fa-user-o" aria-hidden="true"></i>Admin</span>
+                           </div>
+                           <div class="comments">
+                              <span><i class="fa fa-comment-o" aria-hidden="true"></i>36</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="news-post_content">
+                        <h4>Get New Cars In Our Fleet</h4>
+                        <p>Nisi aliquip duis velit  exceptur sint ocecat lorem ipsm eiusmod tempor
+                           velit esse cillum dolore eu fugiat nulla pariatur labore et dolore magna
+                           aliqua ut enim ad minim veniam quis nostrud.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-12">
+            <div class="block-repair-news_post">
+               <div class="row">
+                  <div class="col-md-3">
+                     <img src="{{ asset('media/b-gallery/car_5.jpg') }}" />
+                  </div>
+                  <div class="col-md-9">
+                     <div class="block-repair-news_post_footer">
+                        <div class="post-autor">
+                           <div class="post_data">
+                              <span>26 SEP</span>
+                           </div>
+                           <div class="autor">
+                              <span><i class="fa fa-user-o" aria-hidden="true"></i>Admin</span>
+                           </div>
+                           <div class="comments">
+                              <span><i class="fa fa-comment-o" aria-hidden="true"></i>36</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="news-post_content">
+                        <h4>Get New Cars In Our Fleet</h4>
+                        <p>Nisi aliquip duis velit  exceptur sint ocecat lorem ipsm eiusmod tempor
+                           velit esse cillum dolore eu fugiat nulla pariatur labore et dolore magna
+                           aliqua ut enim ad minim veniam quis nostrud.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-12">
+            <div class="block-repair-news_post">
+               <div class="row">
+                  <div class="col-md-3">
+                     <img src="{{ asset('media/b-gallery/car_5.jpg') }}" />
+                  </div>
+                  <div class="col-md-9">
+                     <div class="block-repair-news_post_footer">
+                        <div class="post-autor">
+                           <div class="post_data">
+                              <span>26 SEP</span>
+                           </div>
+                           <div class="autor">
+                              <span><i class="fa fa-user-o" aria-hidden="true"></i>Admin</span>
+                           </div>
+                           <div class="comments">
+                              <span><i class="fa fa-comment-o" aria-hidden="true"></i>36</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="news-post_content">
+                        <h4>Get New Cars In Our Fleet</h4>
+                        <p>Nisi aliquip duis velit  exceptur sint ocecat lorem ipsm eiusmod tempor
+                           velit esse cillum dolore eu fugiat nulla pariatur labore et dolore magna
+                           aliqua ut enim ad minim veniam quis nostrud.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12">
+            <div class="block-repair-news_button">
+               <a href="#">
+               <i class="fa fa-arrow-right" aria-hidden="true"></i>
+               <span>READ MORE NEWS</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="section-brands bg-gray">
+   <div class="b-brands-slider owl-carousel owl-theme enable-owl-carousel"
+      data-min480="2"
+      data-min768="3"
+      data-min992="6"
+      data-min1200="6"
+      data-pagination="false"
+      data-navigation="false"
+      data-auto-play="400000"
+      data-stop-on-hover="true">
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/1.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/2.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/3.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/4.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/5.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/6.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/1.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/2.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/3.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/4.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/5.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/6.jpg') }}" alt="foto"></span></div>
+   </div>
+</div>
+@include('inc.footer')
