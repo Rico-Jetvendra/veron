@@ -28,6 +28,8 @@
                   <li><a href="car-details.html">Car Details</a></li>
                </ul>
             </li>
+            <li class=""><a href="{{ route('about.index') }}">About Us</a></li>
+            <li class=""><a href="{{ route('contact.index') }}">Contact</a></li>
             <li class="dropdown">
                <a href="blog.html">Language</a>
                <ul class="dropdown-menu">
@@ -35,7 +37,6 @@
                   <li><a href="blog.html">English</a></li>
                </ul>
             </li>
-            <li class=""><a href="{{ route('contact') }}">Contact</a></li>
          </ul>
       </div>
       <!-- ========================== -->
@@ -113,8 +114,8 @@
                               <li><a href="car-details.html">Offroad</a></li>
                            </ul>
                         </li>
-                        <li class="#"><a href="contact.html">About Us</a></li>
-                        <li class="#"><a href="{{ route('contact') }}">Contact</a></li>
+                        <li class="#"><a href="{{ route('about.index') }}">About Us</a></li>
+                        <li class="#"><a href="{{ route('contact.index') }}">Contact</a></li>
                      </ul>
                   </div>
                </div>

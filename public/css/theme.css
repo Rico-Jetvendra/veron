@@ -50,7 +50,7 @@ a {
 }
 
 .l-content {
-  padding-top: 102px;
+  padding-top: 0px;
 }
 
 .main-content {
@@ -743,7 +743,7 @@ a {
 
 .bg_gray .b-filter-main__label , .bg_gray .b-filter-main__link{
     color: #fff;
-    opacity: 0.7;  
+    opacity: 0.7;
 }
 
 .bg_gray .b-filter-main__btns .btn{
@@ -1310,7 +1310,7 @@ a {
 }
 
 .b-goods-group-rental .b-goods .b-goods__inner{
-    background-color: #f6f6f6;  
+    background-color: #f6f6f6;
 }
 
 
@@ -3483,7 +3483,7 @@ header{
     content: '';
     left: -20px;
     top: 0;
-    border-left: 20px solid transparent;	
+    border-left: 20px solid transparent;
 }
 .header-top_button_2{
     display: inline-block;
@@ -3573,7 +3573,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
 
 
 .header-2.header-navbar .yamm .dropdown-menu a{
-   padding: 5px 20px;  
+   padding: 5px 20px;
 }
 
 
@@ -3648,7 +3648,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     display: block;
     border-bottom: 49px solid #ecba00;
     content: '';
-	
+
 }
 
 
@@ -3752,7 +3752,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     display: inline-block !important;
     margin-left: -75px;
     color: #fff !important;
-    
+
 }
 .button_filter span{
 	padding: 0px;
@@ -4081,7 +4081,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     font-size: 30px;
     font-weight: 500;
     line-height: 1.3;
-    text-align: right;  
+    text-align: right;
 }
 
 
@@ -4435,11 +4435,11 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
 }
 
 .block_padding_top{
-    padding-top: 100px;  
+    padding-top: 100px;
 }
 
 .block_padding_bot{
-    padding-bottom: 100px;  
+    padding-bottom: 100px;
 }
 
 .block-app_link:hover .app-link{
@@ -4630,7 +4630,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     content: '';
     left: -21px;
     top: -1px;
-    border-left: 20px solid transparent;	
+    border-left: 20px solid transparent;
 }
 .help-block_button a:after{
     position: absolute;
@@ -4639,7 +4639,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     content: '';
     right: -21px;
     top: -1px;
-    border-right: 20px solid transparent;	
+    border-right: 20px solid transparent;
 }
 .arrow-left{
 	text-align: right;
@@ -4654,7 +4654,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     content: '';
     right: 156px;
     top: 0;
-    border-left: 20px solid transparent;	
+    border-left: 20px solid transparent;
 }
 .button_header{
 	color: #fff;
@@ -4978,7 +4978,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     display: block;
     border-bottom: 49px solid #ecba00;
     content: '';
-	
+
 }
 .recent-block_filter-list{
 	list-style: none;
@@ -5295,7 +5295,7 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     display: block;
 }
 
- 
+
 
 .flip-active .flip-btn{
     opacity: 0;

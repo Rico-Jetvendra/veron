@@ -5,40 +5,18 @@
          <div class="container">
             <div class="row">
                <div class="col-xs-12">
-                  <img class="footer__logo center-block" src="{{ asset('media/logo-footer.png') }}" alt="Legaster">
+                  <img class="footer__logo center-block" src="{{ asset('media/logo.png') }}" alt="Legaster">
                   <div class="ui-decor"></div>
                </div>
             </div>
             <div class="row">
                <div class="col-md-4">
                   <div class="footer__section">
-                     <div class="footer__title">About Legaster</div>
+                     <div class="footer__title">About Veron Indonesia</div>
                      <div class="footer__info">Legaster is nis aliquip consquat duis velit cillum dolore fugiat nulla pariatur excepteurt occaecat lorem ipsum dolor sit amt consecteur adipisicing eiusmod tempor incididuntus.</div>
-                     <div class="footer-contacts">
-                        <span class="footer-contacts__title">Phone:</span>
-                        <a href="tel:+16234759820" class="footer-contacts__info footer-contacts__info_lg">+1 (623) 475 9820</a>
-                     </div>
-                     <div class="footer-contacts">
-                        <span class="footer-contacts__title">email:</span>
-                        <a href="mailto:info@example.com" class="footer-contacts__info">info@example.com</a>
-                     </div>
                   </div>
                </div>
-               <div class="col-md-2">
-                  <div class="footer__section">
-                     <div class="footer__title">Useful Links</div>
-                     <ul class="footer__list list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Cars Listings</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Sell a vehicle</a></li>
-                        <li><a href="#">Latest Vehicles</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Contact us</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-3">
+               <div class="col-md-4">
                   <div class="footer__section">
                      <div class="footer__title">Working Hours</div>
                      <div class="footer-time">
@@ -61,13 +39,13 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-md-3">
+               <div class="col-md-4">
                   <div class="footer__section">
-                     <div class="footer__title">Showroom</div>
+                     <div class="footer__title">Main Office</div>
                      <div class="footer-address">
-                        <div class="footer-address__title">Legaster Dealers</div>
-                        <div class="footer-address__info">1514 Boggess Street<br>Carrollton TX<br>75006</div>
-                        <a href="#" class="footer-address__link">Get Directions</a>
+                        <div class="footer-address__title">Komp. Pergudangan Prima Centre 1 Blok. D29-30<br/> Jl. Pesing Poglar No. 11</div>
+                        <div class="footer-address__info">Telp. (021) 29518999 (hunting) <br/> Fax. (021) 29518991</div>
+                        <div class="footer-address__info">Jakarta Barat, 11710<br/> Indonesia</div>
                      </div>
                   </div>
                </div>
@@ -80,7 +58,7 @@
       <div class="row">
          <div class="col-xs-12">
             <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
-            <div class="copyright">Copyrights 2019 <span class="copyright__brand">Roadster</span> : All rights reserved. <a class="copyright__link" href="#">Terms of Use</a> <a class="copyright__link" href="#">Privacy Policy</a></div>
+            <div class="copyright">Copyrights 2025 <span class="copyright__brand">Veron Indonesia</span> : All rights reserved. <a class="copyright__link" href="#">Terms of Use</a> <a class="copyright__link" href="#">Privacy Policy</a></div>
          </div>
       </div>
    </div>
@@ -104,7 +82,7 @@
 <script src="{{ asset('plugins/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
 <!-- Mail scripts-->
 <script src="{{ asset('plugins/jqBootstrapValidation.js') }}"></script>
-<script src="{{ asset('plugins/contact_me.js') }}"></script>
+<!-- <script src="{{ asset('plugins/contact_me.js') }}"></script> -->
 <!-- Scale images-->
 <script src="{{ asset('plugins/ofi.min.js') }}"></script>
 <!-- Slider-->
