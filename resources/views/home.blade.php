@@ -685,18 +685,12 @@
       data-navigation="false"
       data-auto-play="400000"
       data-stop-on-hover="true">
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/1.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/2.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/3.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/4.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/5.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/6.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/1.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/2.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/3.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/4.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/5.jpg') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/b-brands/6.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/superfleet.png') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/sailun.png') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/neolin.png') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/cemax.png') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/dynamaxx.png') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/ling_long.png') }}" alt="foto"></span></div>
    </div>
 </div>
 @include('inc.footer')

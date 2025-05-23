@@ -82,7 +82,6 @@
 <script src="{{ asset('plugins/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
 <!-- Mail scripts-->
 <script src="{{ asset('plugins/jqBootstrapValidation.js') }}"></script>
-<!-- <script src="{{ asset('plugins/contact_me.js') }}"></script> -->
 <!-- Scale images-->
 <script src="{{ asset('plugins/ofi.min.js') }}"></script>
 <!-- Slider-->
