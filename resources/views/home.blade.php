@@ -5,7 +5,7 @@
       <!-- Slide 1-->
       <div class="sp-slide">
          <div class="b-main-slider__item b-main-slider__item_2">
-            <img class="sp-image" src="{{ asset('media/b-main-slider/slider-repair01.jpg') }}" alt="slider" />
+            <img class="sp-image" src="{{ asset('media/b-main-slider/slider-rental01.jpg') }}" alt="slider" />
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">fix your auto, faster</span></div>
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
                <div class="b-main-slider__title">WANT REPAIR CAR?</div>
@@ -35,7 +35,7 @@
       <div class="row block_padding_top">
          <div class="col-md-6">
             <div class="block-repairs_img">
-               <img src="{{ asset('media/b-gallery/repairman03.jpg') }}"/>
+               <img src="{{ asset('media/b-gallery/bg-4.jpg') }}"/>
                <div class="block-repairs_img-hover">
                   <span>Committed To Ensure Full Safety</span>
                </div>
@@ -358,18 +358,18 @@
             <div class="recent-block_gallery">
                <div class="col-md-6">
                   <div class="col-md-12 gallery_item">
-                     <img src="{{ asset('media/b-gallery/rep_1.jpg') }}"/>
+                     <img src="{{ asset('media/b-gallery/car_5.jpg') }}"/>
                   </div>
                   <div class="col-md-12 gallery_item">
-                     <img src="{{ asset('media/b-gallery/rep_2.jpg') }}"/>
+                     <img src="{{ asset('media/b-gallery/1.jpg') }}"/>
                   </div>
                </div>
                <div class="col-md-6">
                   <div class="col-md-12 gallery_item">
-                     <img src="{{ asset('media/b-gallery/rep_4.jpg') }}"/>
+                     <img src="{{ asset('media/b-gallery/bg-2.jpg') }}"/>
                   </div>
                   <div class="col-md-12 gallery_item">
-                     <img src="{{ asset('media/b-gallery/rep_5.jpg') }}"/>
+                     <img src="{{ asset('media/b-gallery/2.jpg') }}"/>
                   </div>
                </div>
             </div>
@@ -464,7 +464,7 @@
             </div>
             <div class="col-md-6">
                <div class="faq-block_video">
-                  <img src="{{ asset('media/b-gallery/man_1.jpg') }}"/>
+                  <img src="{{ asset('media/b-gallery/bg-3.jpg') }}"/>
                   <a href="#">
                      <div class="faq-block_video-play">
                         <span><i class="fa fa-play faq-block_icon" aria-hidden="true"></i>Committed To Ensure Full Safety</span>
