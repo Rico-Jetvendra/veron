@@ -75,8 +75,8 @@
                         <div class="header-banner">
                            <span class="icon-map header-banner_icon"></span>
                            <div class="header-banner_title">
-                              <h3>Headoffice</h3>
-                              <span>West Jakarta, 11710</span>
+                              <h3>Working</h3>
+                              <span>Monday - Saturday</span>
                            </div>
                         </div>
                      </div>
@@ -84,8 +84,8 @@
                         <div class="header-banner">
                            <span class="icon-clock header-banner_icon"></span>
                            <div class="header-banner_title">
-                              <h3>Working</h3>
-                              <span>Monday - Saturday</span>
+                              <h3>Phone</h3>
+                              <span>(021) 29518999</span>
                            </div>
                         </div>
                      </div>
