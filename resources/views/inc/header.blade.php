@@ -82,7 +82,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="header-banner">
-                           <span class="icon-clock header-banner_icon"></span>
+                           <span class="icon-earphones-alt header-banner_icon"></span>
                            <div class="header-banner_title">
                               <h3>Phone</h3>
                               <span>(021) 29518999</span>
