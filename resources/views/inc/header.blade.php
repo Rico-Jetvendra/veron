@@ -62,7 +62,7 @@
             <div class="header-middle row">
                <div class="col-lg-4 col-md-3">
                   <div class="header-logo">
-                     <a href="/"><img src="{{ asset('media/logo.png') }}" /></a>
+                     <a href="{{ route('home') }}"><img src="{{ asset('media/logo.png') }}" /></a>
                   </div>
                   <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button ">
                   <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
