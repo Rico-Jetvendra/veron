@@ -1,6 +1,6 @@
 @include('inc.header', ['title' => 'Dashboard'])
 
-<div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="950px" data-slider-arrows="true" data-slider-buttons="false">
+<div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="950px" data-slider-arrows="false" data-slider-buttons="false">
    <div class="sp-slides">
       <!-- Slide 1-->
       <div class="sp-slide">
@@ -243,26 +243,27 @@
             <div class="info-block_choose">
                <div class="col-md-3">
                   <div class="info-block_choose-item">
-                     <div class="glyph-icon flaticon-car-suv info-block_icon"></div>
-                     <span>VANS & TRUCKS</span>
+                     <!-- <div class="glyph-icon flaticon-car-suv info-block_icon"></div> -->
+                      <img src="{{ asset('media/b-icons/truck.png') }}" width="200" height="200">
+                     <span style="margin-top:10px;">TRUCKS</span>
                   </div>
                </div>
                <div class="col-md-3">
                   <div class="info-block_choose-item">
-                     <div class="glyph-icon flaticon-coupe-car info-block_icon"></div>
-                     <span>SPORTS CARS</span>
+                      <img src="{{ asset('media/b-icons/dump-truck.png') }}" width="200" height="200">
+                     <span style="margin-top:10px;">DUMP TRUCKS</span>
                   </div>
                </div>
                <div class="col-md-3">
                   <div class="info-block_choose-item">
-                     <div class="glyph-icon flaticon-pick-up info-block_icon"></div>
-                     <span>SUVS & PICKUPS</span>
+                      <img src="{{ asset('media/b-icons/tractor.png') }}" width="200" height="200">
+                     <span style="margin-top:10px;">TRACTORS</span>
                   </div>
                </div>
                <div class="col-md-3">
                   <div class="info-block_choose-item">
-                     <div class="glyph-icon flaticon-sedan-car-model info-block_icon"></div>
-                     <span>ALL SEDANS</span>
+                      <img src="{{ asset('media/b-icons/concrete-truck.png') }}" width="200" height="200">
+                     <span style="margin-top:10px;">CONCRETE TRUCKS</span>
                   </div>
                </div>
             </div>
@@ -471,205 +472,6 @@
                      </div>
                   </a>
                </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<div class="comment-block block_padding">
-   <div class="container">
-      <div class="row">
-         <div class="col-xs-12">
-            <div class="comment-block_header">
-               <h2>What Customers <span>Says</span></h2>
-               <span>At our workshop vehicle body repair & all related fixes </span>
-               <div class="decor"></div>
-            </div>
-         </div>
-         <div class="reviews-slider">
-            <div class="owl-carousel owl-theme enable-owl-carousel"
-               data-min480="2"
-               data-min768="3"
-               data-min992="3"
-               data-min1200="3"
-               data-pagination="true"
-               data-navigation="false"
-               data-auto-play="400000"
-               data-stop-on-hover="true">
-               <div class="comment-block_item">
-                  <img src="{{ asset('media/b-reiews/1.jpg') }}" />
-                  <h4>KANE JOSEPH</h4>
-                  <span>CUSTOMER</span>
-                  <p>Legaster is urn sed vel nullamys semper
-                     vestibulum fringilla orem ipsum dolor sit amet
-                     sectetur adipisicing elit aiusmod.
-                  </p>
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-               </div>
-               <div class="comment-block_item">
-                  <img src="{{ asset('media/b-reiews/2.jpg') }}" />
-                  <h4>KANE JOSEPH</h4>
-                  <span>CUSTOMER</span>
-                  <p>Legaster is urn sed vel nullamys semper
-                     vestibulum fringilla orem ipsum dolor sit amet
-                     sectetur adipisicing elit aiusmod.
-                  </p>
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-               </div>
-               <div class="comment-block_item">
-                  <img src="{{ asset('media/b-reiews/3.jpg') }}" />
-                  <h4>KANE JOSEPH</h4>
-                  <span>CUSTOMER</span>
-                  <p>Legaster is urn sed vel nullamys semper
-                     vestibulum fringilla orem ipsum dolor sit amet
-                     sectetur adipisicing elit aiusmod.
-                  </p>
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-               </div>
-               <div class="comment-block_item">
-                  <img src="{{ asset('media/b-reiews/1.jpg') }}" />
-                  <h4>KANE JOSEPH</h4>
-                  <span>CUSTOMER</span>
-                  <p>Legaster is urn sed vel nullamys semper
-                     vestibulum fringilla orem ipsum dolor sit amet
-                     sectetur adipisicing elit aiusmod.
-                  </p>
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-               </div>
-               <div class="comment-block_item">
-                  <img src="{{ asset('media/b-reiews/2.jpg') }}" />
-                  <h4>KANE JOSEPH</h4>
-                  <span>CUSTOMER</span>
-                  <p>Legaster is urn sed vel nullamys semper
-                     vestibulum fringilla orem ipsum dolor sit amet
-                     sectetur adipisicing elit aiusmod.
-                  </p>
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-               </div>
-               <div class="comment-block_item">
-                  <img src="{{ asset('media/b-reiews/3.jpg') }}" />
-                  <h4>KANE JOSEPH</h4>
-                  <span>CUSTOMER</span>
-                  <p>Legaster is urn sed vel nullamys semper
-                     vestibulum fringilla orem ipsum dolor sit amet
-                     sectetur adipisicing elit aiusmod.
-                  </p>
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<div class="block-repair-news block_padding bg-white">
-   <div class="container">
-      <div class="row">
-         <div class="col-xs-12">
-            <div class="block-repair-news_header">
-               <h2>Read Blog <span>News</span></h2>
-               <span>Excellent experience both picking up & dropping off</span>
-               <div class="decor"></div>
-            </div>
-         </div>
-         <div class="col-xs-12 col-md-12">
-            <div class="block-repair-news_post">
-               <div class="row">
-                  <div class="col-md-3">
-                     <img src="{{ asset('media/b-gallery/car_5.jpg') }}" />
-                  </div>
-                  <div class="col-md-9">
-                     <div class="block-repair-news_post_footer">
-                        <div class="post-autor">
-                           <div class="post_data">
-                              <span>26 SEP</span>
-                           </div>
-                           <div class="autor">
-                              <span><i class="fa fa-user-o" aria-hidden="true"></i>Admin</span>
-                           </div>
-                           <div class="comments">
-                              <span><i class="fa fa-comment-o" aria-hidden="true"></i>36</span>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="news-post_content">
-                        <h4>Get New Cars In Our Fleet</h4>
-                        <p>Nisi aliquip duis velit  exceptur sint ocecat lorem ipsm eiusmod tempor
-                           velit esse cillum dolore eu fugiat nulla pariatur labore et dolore magna
-                           aliqua ut enim ad minim veniam quis nostrud.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-xs-12 col-md-12">
-            <div class="block-repair-news_post">
-               <div class="row">
-                  <div class="col-md-3">
-                     <img src="{{ asset('media/b-gallery/car_5.jpg') }}" />
-                  </div>
-                  <div class="col-md-9">
-                     <div class="block-repair-news_post_footer">
-                        <div class="post-autor">
-                           <div class="post_data">
-                              <span>26 SEP</span>
-                           </div>
-                           <div class="autor">
-                              <span><i class="fa fa-user-o" aria-hidden="true"></i>Admin</span>
-                           </div>
-                           <div class="comments">
-                              <span><i class="fa fa-comment-o" aria-hidden="true"></i>36</span>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="news-post_content">
-                        <h4>Get New Cars In Our Fleet</h4>
-                        <p>Nisi aliquip duis velit  exceptur sint ocecat lorem ipsm eiusmod tempor
-                           velit esse cillum dolore eu fugiat nulla pariatur labore et dolore magna
-                           aliqua ut enim ad minim veniam quis nostrud.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-xs-12 col-md-12">
-            <div class="block-repair-news_post">
-               <div class="row">
-                  <div class="col-md-3">
-                     <img src="{{ asset('media/b-gallery/car_5.jpg') }}" />
-                  </div>
-                  <div class="col-md-9">
-                     <div class="block-repair-news_post_footer">
-                        <div class="post-autor">
-                           <div class="post_data">
-                              <span>26 SEP</span>
-                           </div>
-                           <div class="autor">
-                              <span><i class="fa fa-user-o" aria-hidden="true"></i>Admin</span>
-                           </div>
-                           <div class="comments">
-                              <span><i class="fa fa-comment-o" aria-hidden="true"></i>36</span>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="news-post_content">
-                        <h4>Get New Cars In Our Fleet</h4>
-                        <p>Nisi aliquip duis velit  exceptur sint ocecat lorem ipsm eiusmod tempor
-                           velit esse cillum dolore eu fugiat nulla pariatur labore et dolore magna
-                           aliqua ut enim ad minim veniam quis nostrud.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-xs-12">
-            <div class="block-repair-news_button">
-               <a href="#">
-               <i class="fa fa-arrow-right" aria-hidden="true"></i>
-               <span>READ MORE NEWS</span>
-               </a>
             </div>
          </div>
       </div>
