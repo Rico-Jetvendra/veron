@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('home');
@@ -10,6 +11,7 @@ Route::get('/', function () {
 
 Route::resource('contact', ContactController::class);
 Route::resource('about', AboutController::class);
+Route::resource('admin', AdminController::class);
 
 Route::get('captcha/{config?}', '\Mews\Captcha\CaptchaController@getCaptcha');
 

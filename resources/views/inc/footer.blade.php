@@ -21,11 +21,11 @@
                      <div class="footer__title">Working Hours</div>
                      <div class="footer-time">
                         <span class="footer-time__name">Weekdays:</span>
-                        <span class="footer-time__info">9:00am – 8:00pm</span>
+                        <span class="footer-time__info">9:00am – 5:00pm</span>
                      </div>
                      <div class="footer-time">
                         <span class="footer-time__name">Saturday:</span>
-                        <span class="footer-time__info">10:00am – 6:00pm</span>
+                        <span class="footer-time__info">09:00am – 12:00pm</span>
                      </div>
                      <div class="footer-time">
                         <span class="footer-time__name">Sunday:</span>
