@@ -130,9 +130,16 @@
     { name: "Balikpapan", lat: -1.1575790103422974, lng: 116.85619389815051 }
     ];
 
+    // Add markers
     locations.forEach(loc => {
-    L.marker([loc.lat, loc.lng])
-        .addTo(map)
-        .bindPopup(`<b>${loc.name}</b>`);
+        const marker = L.marker([loc.lat, loc.lng]).addTo(map);
+        marker.bindPopup(`${loc.name}<br><a href="https://www.google.com/maps?q=${loc.lat},${loc.lng}" target="_blank">Open in Google Maps</a>`);
+
+        // Optional: open Google Maps directly on marker click
+        /*
+        marker.on('click', () => {
+        window.open(`https://www.google.com/maps?q=${loc.lat},${loc.lng}`, '_blank');
+        });
+        */
     });
 </script>
