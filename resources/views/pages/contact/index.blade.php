@@ -28,7 +28,7 @@
             <div class="ui-decor"></div>
         </section>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <form action="{{ route('contact.store') }}" method="POST">
                     {{ csrf_field() }}
 
@@ -82,8 +82,8 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-4">
-                <div id="map" style="height: 50vh;"></div>
+            <div class="col-md-6">
+                <div id="map" style="height: 75vh;"></div>
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8446964132722!2d106.75958717453021!3d-6.151548260296151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f63349955553%3A0xd12c8f02933341f2!2sPT.%20Veron%20Indonesia!5e0!3m2!1sen!2sid!4v1747794808564!5m2!1sen!2sid" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
                 <label>Main Office:</label> <br/>
