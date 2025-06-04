@@ -83,7 +83,8 @@
                 </form>
             </div>
             <div class="col-md-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8446964132722!2d106.75958717453021!3d-6.151548260296151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f63349955553%3A0xd12c8f02933341f2!2sPT.%20Veron%20Indonesia!5e0!3m2!1sen!2sid!4v1747794808564!5m2!1sen!2sid" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map" style="height: 50vh;"></div>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8446964132722!2d106.75958717453021!3d-6.151548260296151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f63349955553%3A0xd12c8f02933341f2!2sPT.%20Veron%20Indonesia!5e0!3m2!1sen!2sid!4v1747794808564!5m2!1sen!2sid" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
                 <label>Main Office:</label> <br/>
                 <label>Komp. Pergudangan Prima Centre 1 Blok. D29-30 Jl. Pesing Poglar No. 11</label><br/>
@@ -111,4 +112,27 @@
                 document.querySelector('img[alt="CAPTCHA"]').src = data.captcha;
             });
     }
+
+    const map = L.map('map').setView([-2.5, 118], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    // Add static markers
+    const locations = [
+    { name: "Jakarta", lat: -6.151324258194178, lng: 106.76211918465744 },
+    { name: "Surabaya", lat: -7.359135864960575 , lng: 112.77021222959155 },
+    { name: "Lampung", lat: -5.407941863430887, lng: 105.30703477513798 },
+    { name: "Palembang", lat: -2.9241356261952376, lng: 104.68738423046088 },
+    { name: "Medan", lat: 3.6317703286370127, lng: 98.68188391534255 },
+    { name: "Pekan Baru", lat: 0.5104495885464796, lng: 101.37782030959012 },
+    { name: "Makasar", lat: -5.098597361062597, lng: 119.4885213558218 },
+    { name: "Semarang", lat: -7.010513103245972, lng: 110.34239928986824 },
+    { name: "Bandung", lat: -6.975513284560708, lng: 107.63670814220023 },
+    { name: "Balikpapan", lat: -1.1575790103422974, lng: 116.85619389815051 }
+    ];
+
+    locations.forEach(loc => {
+    L.marker([loc.lat, loc.lng])
+        .addTo(map)
+        .bindPopup(`<b>${loc.name}</b>`);
+    });
 </script>

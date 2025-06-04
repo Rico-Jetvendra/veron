@@ -7,6 +7,10 @@
       <link rel="icon" href="{{ asset('media/icon.jpg') }}" type="image/x-icon"/>
       <link rel="shortcut icon" href="{{ asset('media/icon.jpg') }}" type="image/x-icon"/>
       <link href="{{ asset('css/master.css') }}" rel="stylesheet">
+      <!-- Include Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
    </head>
    <body>
       <!-- Loader-->
