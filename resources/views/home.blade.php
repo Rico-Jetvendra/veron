@@ -107,7 +107,7 @@
       </div>
    </div>
 </div>
-<div class="block-banner">
+<!-- <div class="block-banner">
    <div class="row">
       <div class="col-md-6">
          <div class="block-banner_banner-1">
@@ -228,7 +228,7 @@
          </div>
       </div>
    </div>
-</div>
+</div> -->
 <div class="info-block block_padding">
    <div class="container">
       <div class="row">
