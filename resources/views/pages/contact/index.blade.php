@@ -57,19 +57,19 @@
                                 <textarea class="form-control" placeholder="Message" id="message" name="message" required style="width:100%;height:200px;resize:none;"></textarea>
                             </div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="captcha">Captcha</label>
                                 <input class="form-control" type="text" placeholder="Captcha" id="captcha" name="captcha" required>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <label for=""></label>
-                            <div class=" row">
-                                <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-10">
                                     <img src="{{ captcha_src() }}" alt="CAPTCHA">
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-2">
                                     <button type="button" onclick="refreshCaptcha()">↻</button>
                                 </div>
                             </div>
