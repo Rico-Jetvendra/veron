@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 class ContactController extends Controller{
     /**
@@ -39,11 +41,15 @@ class ContactController extends Controller{
             'captcha' => 'required|captcha',
         ]);
 
-        print("Name : ".$request->input('name'));
-        print("Email : ".$request->input('email'));
-        print("Phone : ".$request->input('phone'));
-        print("Message : ".$request->input('message'));
-        print("Captcha : ".$request->input('captcha'));
+        $data = [
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'message' => $request->input('message'),
+        ];
+
+        Mail::to('rico.jetvendra@gmail.com')->send(new ContactMail($data));
+        return view('pages/contact/index');
     }
 
     /**
