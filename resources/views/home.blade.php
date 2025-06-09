@@ -347,7 +347,7 @@
       </div>
    </div>
 </div>
-<div class="recent-block block_padding">
+<!-- <div class="recent-block block_padding">
    <div class="container">
       <div class="row">
          <div class="col-xs-12">
@@ -385,7 +385,7 @@
          </div>
       </div>
    </div>
-</div>
+</div> -->
 <div class="contact-block block_padding">
    <div class="container">
       <div class="row">
@@ -490,9 +490,61 @@
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/superfleet.png') }}" alt="foto"></span></div>
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/sailun.png') }}" alt="foto"></span></div>
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/neolin.png') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/cemax.png') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/cemax.jpg') }}" alt="foto"></span></div>
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/dynamaxx.png') }}" alt="foto"></span></div>
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/ling_long.png') }}" alt="foto"></span></div>
    </div>
 </div>
+<div class="faq-block block_padding">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="ui-wrap-figure">
+               <span class="ui-top-figure"></span>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12" style="margin-bottom:10px;">
+               <div class="faq-block_header">
+                  <center><h2>Our <span>Location</span></h2></center>
+               </div>
+            </div>
+            <div class="col-xs-12">
+                <div id="map" style="height: 75vh;"></div>
+            </div>
+         </div>
+        </div>
+    </div>
+</div>
 @include('inc.footer')
+<script>
+    const map = L.map('map').setView([-2.5, 118], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    // Add static markers
+    const locations = [
+    { name: "Jakarta", lat: -6.151324258194178, lng: 106.76211918465744 },
+    { name: "Surabaya", lat: -7.359135864960575 , lng: 112.77021222959155 },
+    { name: "Lampung", lat: -5.407941863430887, lng: 105.30703477513798 },
+    { name: "Palembang", lat: -2.9241356261952376, lng: 104.68738423046088 },
+    { name: "Medan", lat: 3.6317703286370127, lng: 98.68188391534255 },
+    { name: "Pekan Baru", lat: 0.5104495885464796, lng: 101.37782030959012 },
+    { name: "Makasar", lat: -5.098597361062597, lng: 119.4885213558218 },
+    { name: "Semarang", lat: -7.010513103245972, lng: 110.34239928986824 },
+    { name: "Bandung", lat: -6.975513284560708, lng: 107.63670814220023 },
+    { name: "Balikpapan", lat: -1.1575790103422974, lng: 116.85619389815051 }
+    ];
+
+    // Add markers
+    locations.forEach(loc => {
+        const marker = L.marker([loc.lat, loc.lng]).addTo(map);
+        marker.bindPopup(`${loc.name}<br><a href="https://www.google.com/maps?q=${loc.lat},${loc.lng}" target="_blank">Open in Google Maps</a>`);
+
+        // Optional: open Google Maps directly on marker click
+        /*
+        marker.on('click', () => {
+        window.open(`https://www.google.com/maps?q=${loc.lat},${loc.lng}`, '_blank');
+        });
+        */
+    });
+</script>

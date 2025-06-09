@@ -4,12 +4,6 @@
       <div class="footer__top bg-inner">
          <div class="container">
             <div class="row">
-               <div class="col-xs-12">
-                  <img class="footer__logo center-block" src="{{ asset('media/logo.png') }}" alt="Legaster">
-                  <div class="ui-decor"></div>
-               </div>
-            </div>
-            <div class="row">
                <div class="col-md-4">
                   <div class="footer__section">
                      <div class="footer__title">About Veron Indonesia</div>
@@ -101,6 +95,6 @@
 <script src="{{ asset('plugins/isotope/isotope.pkgd.min.js') }}"></script>
 <script src="{{ asset('plugins/isotope/imagesLoaded.js') }}"></script>
 <!--User customization-->
-<script src="{{ asset('js/custom.js') }}"></script>"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
 </body>
 </html>
