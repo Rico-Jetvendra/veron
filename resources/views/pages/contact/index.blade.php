@@ -106,7 +106,7 @@
     }
 
     function refreshCaptcha() {
-        fetch('/refresh-captcha')
+        fetch('/veron/refresh-captcha')
             .then(res => res.json())
             .then(data => {
                 document.querySelector('img[alt="CAPTCHA"]').src = data.captcha;
