@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class AdminController extends Controller{
     /**
@@ -12,7 +13,9 @@ class AdminController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        return view('pages/admin/index');
+        $session = Session::get('user');
+
+        return view('pages/admin/index', compact('session'));
     }
 
     /**
