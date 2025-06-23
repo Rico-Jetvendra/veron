@@ -25,11 +25,11 @@
          <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav  menu-marker-arrow">
             <li><a href="{{ route('home') }}">Home</a></li>
             <li class="dropdown">
-               <a href="vehicle-listings.html">Vehicle Listings</a>
+               <a href="#">Vehicle Listings</a>
                <ul class="dropdown-menu">
-                  <li><a href="vehicle-listings.html">Car Listings</a></li>
-                  <li><a href="vehicle-listings_no-sidebar.html">Car Grid</a></li>
-                  <li><a href="car-details.html">Car Details</a></li>
+                  <li><a href="{{ route('productlist.show', '1') }}">Passenger</a></li>
+                  <li><a href="{{ route('productlist.show', '2') }}">Radial</a></li>
+                  <li><a href="{{ route('productlist.show', '3') }}">Offroad</a></li>
                </ul>
             </li>
             <li class=""><a href="{{ route('about.index') }}">About Us</a></li>
@@ -111,11 +111,11 @@
                      <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav menu-marker-arrow">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li class="dropdown">
-                           <a href="vehicle-listings.html">Tires Listings</a>
+                           <a href="#">Tires Listings</a>
                            <ul class="dropdown-menu">
-                              <li><a href="vehicle-listings.html">Passenger</a></li>
-                              <li><a href="vehicle-listings_no-sidebar.html">Radial</a></li>
-                              <li><a href="car-details.html">Offroad</a></li>
+                                <li><a href="{{ route('productlist.show', ['productlist' => '1']) }}">Passenger</a></li>
+                                <li><a href="{{ route('productlist.show', ['productlist' => '2']) }}">Radial</a></li>
+                                <li><a href="{{ route('productlist.show', ['productlist' => '3']) }}">Offroad</a></li>
                            </ul>
                         </li>
                         <li class="#"><a href="{{ route('about.index') }}">About Us</a></li>

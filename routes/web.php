@@ -6,6 +6,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductListController;
 
 Route::get('/', function () {
     return view('home');
@@ -20,8 +22,10 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout');
 
 Route::resource('contact', ContactController::class);
 Route::resource('about', AboutController::class);
+Route::resource('productlist', ProductListController::class);
 Route::resource('admin', AdminController::class)->middleware('check.session');
 Route::resource('user', UserController::class)->middleware('check.session');
+Route::resource('product', ProductController::class)->middleware('check.session');
 
 Route::get('captcha/{config?}', '\Mews\Captcha\CaptchaController@getCaptcha');
 

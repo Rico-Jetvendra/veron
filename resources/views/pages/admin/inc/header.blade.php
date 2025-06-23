@@ -69,6 +69,12 @@
               <p>User</p>
             </a>
           </li>
+          <li class="nav-item {{ ($title == 'Product') ? 'menu-open' : '' }}">
+            <a href="{{ route('product.index') }}" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>Product</p>
+            </a>
+          </li>
           <li class="nav-item">
             <a href="{{ route('login.logout') }}" class="nav-link">
               <i class="nav-icon fas fa-power-off"></i>
