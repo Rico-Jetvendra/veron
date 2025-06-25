@@ -86,7 +86,7 @@
     var id = $('#user_id').val();
 
     $.ajax({
-        url: '/user/'+id,
+        url: 'veron/user/'+id,
         method: 'DELETE',
         cache: false,
         data: { _token: "{{ csrf_token() }}" },

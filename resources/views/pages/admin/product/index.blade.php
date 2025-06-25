@@ -105,7 +105,7 @@
     var id = $('#product_id').val();
 
     $.ajax({
-        url: '/product/'+id,
+        url: 'veron/product/'+id,
         method: 'DELETE',
         cache: false,
         data: { _token: "{{ csrf_token() }}" },
