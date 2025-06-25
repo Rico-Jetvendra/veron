@@ -6,24 +6,24 @@
             <div class="row">
                <div class="col-md-4">
                   <div class="footer__section">
-                     <div class="footer__title">About Veron Indonesia</div>
+                     <div class="footer__title">{{ __('footer.about') }} Veron Indonesia</div>
                      <div class="footer__info">Legaster is nis aliquip consquat duis velit cillum dolore fugiat nulla pariatur excepteurt occaecat lorem ipsum dolor sit amt consecteur adipisicing eiusmod tempor incididuntus.</div>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="footer__section">
-                     <div class="footer__title">Working Hours</div>
+                     <div class="footer__title">{{ __('footer.working_hours') }}</div>
                      <div class="footer-time">
-                        <span class="footer-time__name">Weekdays:</span>
+                        <span class="footer-time__name">{{ __('footer.weekdays') }}:</span>
                         <span class="footer-time__info">9:00am – 5:00pm</span>
                      </div>
                      <div class="footer-time">
-                        <span class="footer-time__name">Saturday:</span>
+                        <span class="footer-time__name">{{ __('footer.saturday') }}:</span>
                         <span class="footer-time__info">09:00am – 12:00pm</span>
                      </div>
                      <div class="footer-time">
-                        <span class="footer-time__name">Sunday:</span>
-                        <span class="footer-time__info">Closed</span>
+                        <span class="footer-time__name">{{ __('footer.sunday') }}:</span>
+                        <span class="footer-time__info">{{ __('footer.closed') }}</span>
                      </div>
                      <ul class="footer-soc list-unstyled">
                         <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-facebook"></i></a></li>
@@ -35,7 +35,7 @@
                </div>
                <div class="col-md-4">
                   <div class="footer__section">
-                     <div class="footer__title">Main Office</div>
+                     <div class="footer__title">{{ __('footer.main_office') }}</div>
                      <div class="footer-address">
                         <div class="footer-address__title">Komp. Pergudangan Prima Centre 1 Blok. D29-30<br/> Jl. Pesing Poglar No. 11</div>
                         <div class="footer-address__info">Telp. (021) 29518999 (hunting) <br/> Fax. (021) 29518991</div>

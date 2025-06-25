@@ -1,4 +1,4 @@
-@include('pages.admin.inc.header', ['title' => 'Product', 'subtitle' => ''])
+@include('pages.admin.inc.header', ['title' => 'Language', 'subtitle' => ''])
 
     <!-- Main content -->
     <section class="content">
@@ -6,32 +6,28 @@
         <!-- Small boxes (Stat box) -->
         <div class="row card">
             <div class="card-header">
-                <a href="{{ route('product.create') }}" class="btn btn-success" title="Add New"><i class="fas fa-plus"></i></a>
+                <a href="{{ route('language.create') }}" class="btn btn-success" title="Add New"><i class="fas fa-plus"></i></a>
             </div>
             <div class="card-body table-responsive-sm">
                 <table id="myTable" class="table table-bordered table-hover">
                     <thead class="thead-light">
                         <tr>
                             <th>Code</th>
-                            <th>Product</th>
+                            <th>Language</th>
                             <th>Type</th>
-                            <th>Brand</th>
-                            <th>Size</th>
-                            <th>Tread Depth</th>
-                            <th>Road Condition</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                            foreach($products as $product){
+                            foreach($products as $language){
                         ?>
                             <tr>
-                                <td><?= $product->product_code ?></td>
-                                <td><?= $product->product_name ?></td>
+                                <td><?= $language->product_code ?></td>
+                                <td><?= $language->product_name ?></td>
                                 <td>
                                     <?php
-                                        switch ($product->product_type) {
+                                        switch ($language->product_type) {
                                             case '1':
                                                 echo 'Passenger';
                                                 break;
@@ -45,13 +41,9 @@
 
                                     ?>
                                 </td>
-                                <td><?= $product->product_brand ?></td>
-                                <td><?= $product->product_size ?>mm</td>
-                                <td><?= $product->product_tread_depth ?></td>
-                                <td><?= $product->product_road_condition ?></td>
                                 <td>
-                                    <a href="{{ route('product.edit', ['product' => $product->product_id]) }}" class="btn btn-warning" title="Edit"><i class="fas fa-edit" style="color:white;"></i></a>
-                                    <button type="button" class="btn btn-danger" title="Delete" onclick="openDeleteModal('{{ $product->product_id }}', '{{ $product->product_name }}')"><i class="fas fa-trash"></i></button>
+                                    <a href="{{ route('language.edit', ['language' => $language->product_id]) }}" class="btn btn-warning" title="Edit"><i class="fas fa-edit" style="color:white;"></i></a>
+                                    <button type="button" class="btn btn-danger" title="Delete" onclick="openDeleteModal('{{ $language->product_id }}', '{{ $language->product_name }}')"><i class="fas fa-trash"></i></button>
                                 </td>
                             </tr>
                         <?php
@@ -75,7 +67,7 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-            <h4 class="modal-title">Delete Product</h4>
+            <h4 class="modal-title">Delete Language</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
@@ -103,9 +95,9 @@
     });
   });
 
-  function openDeleteModal(id, product){
+  function openDeleteModal(id, language){
     $('#product_id').val(id);
-    $('#deleteRecord').html(product);
+    $('#deleteRecord').html(language);
     $('#myModal').modal('show');
   }
 
@@ -113,13 +105,13 @@
     var id = $('#product_id').val();
 
     $.ajax({
-        url: 'veron/product/'+id,
+        url: 'veron/language/'+id,
         method: 'DELETE',
         cache: false,
         data: { _token: "{{ csrf_token() }}" },
         success: function(response) {
             console.log('Data received:', response);
-            window.location.replace("{{ route('product.index') }}");
+            window.location.replace("{{ route('language.index') }}");
         },
         error: function(xhr, status, error) {
             console.error('AJAX error:', status, error);

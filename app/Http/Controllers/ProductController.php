@@ -39,8 +39,12 @@ class ProductController extends Controller{
         $validated = $request->validate([
             'product_name'  => 'required',
             'product_code'  => 'required',
-            'product_type' => 'required',
-            'product_desc' => 'required',
+            'product_type'  => 'required',
+            'product_brand'  => 'required',
+            'product_size'  => 'required',
+            'product_tread_depth'  => 'required',
+            'product_road_condition'  => 'required',
+            'product_desc'  => 'required',
             'product_photo' => 'required|file|mimes:jpg,jpeg,png'
         ]);
 
@@ -55,6 +59,10 @@ class ProductController extends Controller{
             'product_name' => $validated['product_name'],
             'product_code' => $validated['product_code'],
             'product_type' => $validated['product_type'],
+            'product_brand' => $validated['product_brand'],
+            'product_size' => $validated['product_size'],
+            'product_tread_depth' => $validated['product_tread_depth'],
+            'product_road_condition' => $validated['product_road_condition'],
             'product_desc' => $validated['product_desc'],
             'product_photo' => $filename,
         ]);
@@ -98,8 +106,12 @@ class ProductController extends Controller{
         $validated = $request->validate([
             'product_name'  => 'required',
             'product_code'  => 'required',
-            'product_type' => 'required',
-            'product_desc' => 'required'
+            'product_type'  => 'required',
+            'product_brand'  => 'required',
+            'product_size'  => 'required',
+            'product_tread_depth'  => 'required',
+            'product_road_condition'  => 'required',
+            'product_desc'  => 'required'
         ]);
 
         if ($request->hasFile('product_photo')) {
@@ -113,6 +125,10 @@ class ProductController extends Controller{
             'product_name' => $validated['product_name'],
             'product_code' => $validated['product_code'],
             'product_type' => $validated['product_type'],
+            'product_brand' => $validated['product_brand'],
+            'product_size' => $validated['product_size'],
+            'product_tread_depth' => $validated['product_tread_depth'],
+            'product_road_condition' => $validated['product_road_condition'],
             'product_desc' => $validated['product_desc'],
             'product_photo' => $filename,
         ]);

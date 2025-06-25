@@ -7,10 +7,10 @@
                 <div class="col-xs-12">
                     <div class="ui-block-title">
                         <ol class="breadcrumb">
-                            <li><a href="/">Home</a></li>
-                            <li class="active">Contact</li>
+                            <li><a href="/">{{ __('contact.home') }}</a></li>
+                            <li class="active">{{ __('contact.contact') }}</li>
                         </ol>
-                        <h1 class="ui-title-page">CONTACT US</h1>
+                        <h1 class="ui-title-page">{{ __('contact.contact') }} {{ __('contact.us') }}</h1>
                     </div>
 
                 </div>
@@ -23,8 +23,8 @@
 <div class="l-content">
     <div class="container">
         <section class="section-contacts">
-            <h2 class="ui-title-block">Always ready to help <span class="text-primary">you</span></h2>
-            <div class="ui-subtitle">If you have any question or need further information, please do not hesitate to contact us. Our professional marketing team will be glad to assist you.</div>
+            <h2 class="ui-title-block">{{ __('contact.header1') }} <span class="text-primary">{{ __('contact.you') }}</span></h2>
+            <div class="ui-subtitle">{{ __('contact.header2') }}</div>
             <div class="ui-decor"></div>
         </section>
         <div class="row">
@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name">{{ __('contact.name') }}</label>
                                 <input class="form-control" type="text" placeholder="ex: John Doe" id="name" name="name" required>
                             </div>
                         </div>
@@ -47,14 +47,14 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="phone">Phone</label>
+                                <label for="phone">{{ __('contact.phone') }}</label>
                                 <input class="form-control" type="text" placeholder="ex: 081234567890" id="phone" name="phone" onchange="checkPhone(this.value)" required>
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" placeholder="Message" id="message" name="message" required style="width:100%;height:200px;resize:none;"></textarea>
+                                <label for="message">{{ __('contact.message') }}</label>
+                                <textarea class="form-control" placeholder="{{ __('contact.message') }}" id="message" name="message" required style="width:100%;height:200px;resize:none;"></textarea>
                             </div>
                         </div>
                         <div class="col-sm-3">
@@ -86,7 +86,7 @@
                 <div id="map" style="height: 75vh;"></div>
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8446964132722!2d106.75958717453021!3d-6.151548260296151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f63349955553%3A0xd12c8f02933341f2!2sPT.%20Veron%20Indonesia!5e0!3m2!1sen!2sid!4v1747794808564!5m2!1sen!2sid" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
-                <label>Main Office:</label> <br/>
+                <label>{{ __('contact.main_office') }}:</label> <br/>
                 <label>Komp. Pergudangan Prima Centre 1 Blok. D29-30 Jl. Pesing Poglar No. 11</label><br/>
                 <label>Telp. (021) 29518999 (hunting) </label> <br/>
                 <label>Fax. (021) 29518991 </label> <br/>

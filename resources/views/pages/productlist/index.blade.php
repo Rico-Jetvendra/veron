@@ -38,11 +38,24 @@
                 <div class="col-md-4 card">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{ asset('storage/uploads/' . $pr->product_photo) }}" title="{{ $pr->product_name }}" width="150px" height="150px">
+                            <img src="{{ asset('storage/uploads/' . $pr->product_photo) }}" title="{{ $pr->product_name }} - {{ $pr->product_brand }}" width="150px" height="150px">
                         </div>
                         <div class="col-md-6">
-                            <label>{{ $pr->product_code }}</label><br/>
-                            {{ $pr->product_name }}<br/>
+                            <label>{{ $pr->product_code }} ({{ $pr->product_size }}mm)</label><br/>
+                            {{ $pr->product_name }} - {{ $pr->product_brand }}
+                            <hr style="padding:0px;margin:10px 0px;"/>
+                            <table>
+                                <tr>
+                                    <td>Tread Depth</td>
+                                    <td style="padding:0px 5px;">:</td>
+                                    <td>{{ $pr->product_tread_depth }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Road Condition</td>
+                                    <td style="padding:0px 5px;">:</td>
+                                    <td>{{ $pr->product_road_condition }}</td>
+                                </tr>
+                            </table>
                             {{ $pr->product_desc }}<br/>
                         </div>
                     </div>

@@ -75,6 +75,12 @@
               <p>Product</p>
             </a>
           </li>
+          <li class="nav-item {{ ($title == 'Language') ? 'menu-open' : '' }}">
+            <a href="{{ route('language.index') }}" class="nav-link">
+              <i class="nav-icon fas fa-language"></i>
+              <p>Language</p>
+            </a>
+          </li>
           <li class="nav-item">
             <a href="{{ route('login.logout') }}" class="nav-link">
               <i class="nav-icon fas fa-power-off"></i>

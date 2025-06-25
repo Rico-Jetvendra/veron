@@ -15,6 +15,10 @@ class Product extends Model{
         'product_type',
         'product_code',
         'product_name',
+        'product_brand',
+        'product_size',
+        'product_tread_depth',
+        'product_road_condition',
         'product_desc',
         'product_photo',
     ];
