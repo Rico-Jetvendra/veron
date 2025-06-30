@@ -6,10 +6,10 @@
                 <div class="col-xs-12">
                     <div class="ui-block-title">
                         <ol class="breadcrumb">
-                            <li><a href="/">Home</a></li>
-                            <li class="active">Tire List</li>
+                            <li><a href="/">{{ __('product.bread1'); }}</a></li>
+                            <li class="active">{{ __('product.bread2'); }}</li>
                         </ol>
-                        <h1 class="ui-title-page">Tires Listing</h1>
+                        <h1 class="ui-title-page">{{ __('product.bread3'); }}</h1>
                     </div>
 
                 </div>

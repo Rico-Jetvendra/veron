@@ -506,7 +506,7 @@
          <div class="row">
             <div class="col-xs-12" style="margin-bottom:10px;">
                <div class="faq-block_header">
-                  <center><h2>Our <span>Location</span></h2></center>
+                  <center><h2>{{ __('home.our_header'); }} <span>{{ __('home.location_header'); }}</span></h2></center>
                </div>
             </div>
             <div class="col-xs-12">
