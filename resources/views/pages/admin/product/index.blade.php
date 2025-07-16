@@ -33,19 +33,40 @@
                                     <?php
                                         switch ($product->product_type) {
                                             case '1':
-                                                echo 'Passenger';
+                                                echo 'TBR / LTR';
                                                 break;
                                             case '2':
-                                                echo 'Radial';
+                                                echo 'PCR';
                                                 break;
                                             case '3':
-                                                echo 'Offroad';
+                                                echo 'OTR';
                                                 break;
                                         }
 
                                     ?>
                                 </td>
-                                <td><?= $product->product_brand ?></td>
+                                <td>
+                                    <?php
+                                        switch ($product->product_brand) {
+                                            case '1':
+                                                echo 'Sailun';
+                                                break;
+                                            case '2':
+                                                echo 'Neolin';
+                                                break;
+                                            case '3':
+                                                echo 'Superfleet';
+                                                break;
+                                            case '4':
+                                                echo 'Dynamaxx';
+                                                break;
+                                            case '5':
+                                                echo 'Cemax';
+                                                break;
+                                        }
+
+                                    ?>
+                                </td>
                                 <td><?= $product->product_size ?>mm</td>
                                 <td><?= $product->product_tread_depth ?></td>
                                 <td><?= $product->product_road_condition ?></td>

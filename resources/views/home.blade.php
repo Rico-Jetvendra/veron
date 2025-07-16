@@ -1,6 +1,6 @@
 @include('inc.header', ['title' => 'Dashboard'])
 
-<div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="950px" data-slider-arrows="false" data-slider-buttons="false">
+<div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="950px" data-slider-arrows="true" data-slider-buttons="true">
    <div class="sp-slides">
       <!-- Slide 1-->
       <div class="sp-slide">
@@ -9,6 +9,23 @@
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">fix your auto, faster</span></div>
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
                <div class="b-main-slider__title">WANT REPAIR CAR?</div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="800" data-hide-delay="400">
+               <div class="b-main-slider__info">We deliver highest level of satisfaction
+                  through superior workmanship
+               </div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400">
+               <div class="b-main-slider__btns"><span class="b-main-slider__btn">What We Offers</span></div>
+            </div>
+         </div>
+      </div>
+      <div class="sp-slide">
+         <div class="b-main-slider__item b-main-slider__item_2">
+            <img class="sp-image" src="{{ asset('media/b-main-slider/slider-rental02.jpg') }}" alt="slider" />
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">fix your auto, faster</span></div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
+               <div class="b-main-slider__title">WANT REPAIR CAR 123?</div>
             </div>
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="800" data-hide-delay="400">
                <div class="b-main-slider__info">We deliver highest level of satisfaction
@@ -490,7 +507,7 @@
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/superfleet.png') }}" alt="foto"></span></div>
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/sailun.png') }}" alt="foto"></span></div>
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/neolin.png') }}" alt="foto"></span></div>
-      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/cemax.jpg') }}" alt="foto"></span></div>
+      <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/cemax.png') }}" alt="foto"></span></div>
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/dynamaxx.png') }}" alt="foto"></span></div>
       <div class="b-brands-slider__item"><span class="b-brands-slider__inner"><img class="img-scale" src="{{ asset('media/product/ling_long.png') }}" alt="foto"></span></div>
    </div>

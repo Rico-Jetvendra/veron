@@ -1,11 +1,11 @@
-@include('pages.admin.inc.header', ['title' => 'Product', 'subtitle' => 'Edit'])
+@include('pages.admin.inc.header', ['title' => 'Product', 'subtitle' => 'Add'])
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="card">
             <div class="card-body table-responsive-sm">
-                <form action="{{ route('product.update',  $products->product_id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('product.update', $products->product_id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="row">
@@ -24,16 +24,24 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="product_brand">Brand:</label>
-                                <input type="text" class="form-control" name="product_brand" placeholder="Enter Product Brand" id="product_brand" value="{{ $products->product_brand }}">
+                                <select name="product_brand" id="product_brand" class="form-control">
+                                    <option value="1" <?= ($products->product_brand == '1') ? "selected": ""; ?>>Sailun</option>
+                                    <option value="2" <?= ($products->product_brand == '2') ? "selected": ""; ?>>Neolin</option>
+                                    <option value="3" <?= ($products->product_brand == '3') ? "selected": ""; ?>>Superfleet</option>
+                                    <option value="4" <?= ($products->product_brand == '4') ? "selected": ""; ?>>Dynamaxx</option>
+                                    <option value="5" <?= ($products->product_brand == '5') ? "selected": ""; ?>>Cemax</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="product_type">Type:</label>
                                 <select name="product_type" id="product_type" class="form-control">
-                                    <option value="1" {{ $products->product_type == '1' ? 'selected': '' }}>Passenger</option>
-                                    <option value="2" {{ $products->product_type == '2' ? 'selected': '' }}>Radial</option>
-                                    <option value="3" {{ $products->product_type == '3' ? 'selected': '' }}>Offroad</option>
+                                    <option value="">----- Select Product Type -----</option>
+                                    <option value="1" <?= ($products->product_type == '1') ? "selected": ""; ?>>TBR / LTR</option>
+                                    <option value="2" <?= ($products->product_type == '2') ? "selected": ""; ?>>PCR</option>
+                                    <option value="3" <?= ($products->product_type == '3') ? "selected": ""; ?>>OTR</option>
+                                    <option value="4" <?= ($products->product_type == '4') ? "selected": ""; ?>>Other</option>
                                 </select>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 <?php
 return [
-    'bread1' => 'Home',
-    'bread2' => 'Daftar Ban',
-    'bread3' => 'Daftar Ban',
+    'bread1' => 'Beranda',
+    'bread2' => 'Produk',
+    'bread3' => 'Daftar Produk',
 ];
 ?>

@@ -1249,9 +1249,9 @@ a {
   /* height: 137px; */
   margin-right: 15px;
   margin-left: 15px;
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   border-radius: 2px;
-  background-color: #fff;
+  /* background-color: #fff; */
   transition: all .3s;
 
   filter: grayscale(100%);
@@ -5430,4 +5430,154 @@ html .header-2.header-navbar  .yamm .dropdown-menu {
     width: 100%;
 }
 
+/* Enable dropdown-submenu */
+.dropdown-submenu {
+  position: relative;
+}
 
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a::after {
+  content: "▸";
+  float: right;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+/* === MODERN DROPDOWN MENU === */
+
+/* Full-width menu container */
+.modern-menu-wrapper {
+  width: 100%;
+  background-color: #111; /* Matches your dark header */
+  padding: 0 30px; /* Optional left/right spacing */
+  box-sizing: border-box;
+}
+
+/* Remove gap in default body margin if needed */
+body {
+  margin: 0;
+}
+
+.modern-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  background-color: #111; /* Change to match your header */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+.modern-menu > li {
+  position: relative;
+}
+
+.modern-menu > li > a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.modern-menu > li > a:hover {
+  background-color: #222;
+}
+
+/* First-level dropdown */
+.modern-menu li ul {
+	list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  min-width: 200px;
+  padding: 8px 0;
+  z-index: 9999;
+}
+
+.modern-menu li:hover > ul {
+  display: block;
+}
+
+/* Second-level dropdown */
+.modern-menu li ul li {
+  position: relative;
+}
+
+.modern-menu li ul li ul {
+  left: 100%;
+  top: 0;
+}
+
+.modern-menu li ul li:hover > ul {
+  display: block;
+}
+
+/* Menu links inside dropdowns */
+.modern-menu li ul li a {
+  padding: 10px 18px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.modern-menu li ul li a:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+/* Full-width wrapper */
+.modern-menu-wrapper {
+  width: 100%;
+  background-color: #111;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* Flex container to separate left and right */
+.modern-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Shared menu styles */
+.modern-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
+/* Menu items */
+.modern-menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.modern-menu li a:hover {
+  background-color: #222;
+}

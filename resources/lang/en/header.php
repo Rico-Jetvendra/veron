@@ -6,9 +6,11 @@ return [
     'phone' => 'Phone',
     'email_us' => 'Email Us',
     'home' => 'Home',
-    'tires_listings' => 'Tires Listings',
+    'product' => 'Product',
     'about_us' => 'About Us',
     'contact' => 'Contact',
     'language' => 'Language',
+    'news' => 'News',
+    'milestone' => 'Milestone',
 ]
 ?>

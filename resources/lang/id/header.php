@@ -6,9 +6,11 @@ return [
     'phone' => 'Telepon',
     'email_us' => 'Email Kami',
     'home' => 'Beranda',
-    'tires_listings' => 'Daftar Ban',
+    'product' => 'Produk',
     'about_us' => 'Tentang Kami',
     'contact' => 'Kontak',
     'language' => 'Bahasa',
+    'news' => 'Berita',
+    'milestone' => 'Milestone',
 ]
 ?>

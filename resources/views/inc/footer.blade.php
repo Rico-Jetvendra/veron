@@ -7,7 +7,7 @@
                <div class="col-md-4">
                   <div class="footer__section">
                      <div class="footer__title">{{ __('footer.about') }} Veron Indonesia</div>
-                     <div class="footer__info">Legaster is nis aliquip consquat duis velit cillum dolore fugiat nulla pariatur excepteurt occaecat lorem ipsum dolor sit amt consecteur adipisicing eiusmod tempor incididuntus.</div>
+                     <div class="footer__info" style="text-align:justify;">{{ __('footer.about_us') }}</div>
                   </div>
                </div>
                <div class="col-md-4">

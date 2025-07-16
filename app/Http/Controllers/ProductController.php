@@ -39,7 +39,6 @@ class ProductController extends Controller{
         $validated = $request->validate([
             'product_name'  => 'required',
             'product_code'  => 'required',
-            'product_type'  => 'required',
             'product_brand'  => 'required',
             'product_size'  => 'required',
             'product_tread_depth'  => 'required',
@@ -58,7 +57,7 @@ class ProductController extends Controller{
         $product = Product::create([
             'product_name' => $validated['product_name'],
             'product_code' => $validated['product_code'],
-            'product_type' => $validated['product_type'],
+            'product_type' => $request['product_type'],
             'product_brand' => $validated['product_brand'],
             'product_size' => $validated['product_size'],
             'product_tread_depth' => $validated['product_tread_depth'],
@@ -106,7 +105,6 @@ class ProductController extends Controller{
         $validated = $request->validate([
             'product_name'  => 'required',
             'product_code'  => 'required',
-            'product_type'  => 'required',
             'product_brand'  => 'required',
             'product_size'  => 'required',
             'product_tread_depth'  => 'required',
@@ -124,7 +122,7 @@ class ProductController extends Controller{
         $product = Product::where('product_id', $product->product_id)->update([
             'product_name' => $validated['product_name'],
             'product_code' => $validated['product_code'],
-            'product_type' => $validated['product_type'],
+            'product_type' => $request['product_type'],
             'product_brand' => $validated['product_brand'],
             'product_size' => $validated['product_size'],
             'product_tread_depth' => $validated['product_tread_depth'],

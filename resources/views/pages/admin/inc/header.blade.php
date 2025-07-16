@@ -15,6 +15,27 @@
   <link rel="stylesheet" href="{{ asset('adm/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('adm/dist/css/adminlte.min.css') }}">
+  <!-- Summernote CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-bs4.min.css" rel="stylesheet">
+  <!-- Tagsinput -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css">
+  <style>
+    .bootstrap-tagsinput {
+      width: 100%;
+      min-height: calc(1.5em + .75rem + 2px);
+      padding: .375rem .75rem;
+      line-height: 1.5;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+    }
+    .bootstrap-tagsinput .tag {
+      margin-right: 2px;
+      color: white;
+      background-color: #007bff;
+      padding: .2em .5em;
+      border-radius: .2em;
+    }
+  </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -73,6 +94,12 @@
             <a href="{{ route('product.index') }}" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
               <p>Product</p>
+            </a>
+          </li>
+          <li class="nav-item {{ ($title == 'News') ? 'menu-open' : '' }}">
+            <a href="{{ route('news.index') }}" class="nav-link">
+              <i class="nav-icon fas fa-archive"></i>
+              <p>News</p>
             </a>
           </li>
           <li class="nav-item">

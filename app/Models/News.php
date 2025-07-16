@@ -5,15 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Language extends Model{
+class News extends Model{
     use HasFactory;
 
-    protected $table = 't_language';
-    protected $primaryKey = 'language_id';
+    protected $table = 't_news';
+    protected $primaryKey = 'news_id';
     public $timestamps = false;
     protected $fillable = [
-        'language_menu',
-        'language_indo',
-        'language_eng',
+        'news_title',
+        'news_thumbnail',
+        'news_content',
+        'news_tag',
+        'news_date',
     ];
 }

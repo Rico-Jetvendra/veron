@@ -23,16 +23,24 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="product_brand">Brand:</label>
-                                <input type="text" class="form-control" name="product_brand" placeholder="Enter Product Brand" id="product_brand">
+                                <select name="product_brand" id="product_brand" class="form-control">
+                                    <option value="1">Sailun</option>
+                                    <option value="2">Neolin</option>
+                                    <option value="3">Superfleet</option>
+                                    <option value="4">Dynamaxx</option>
+                                    <option value="5">Cemax</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="product_type">Type:</label>
                                 <select name="product_type" id="product_type" class="form-control">
-                                    <option value="1">Passenger</option>
-                                    <option value="2">Radial</option>
-                                    <option value="3">Offroad</option>
+                                    <option value="">----- Select Product Type -----</option>
+                                    <option value="1">TBR / LTR</option>
+                                    <option value="2">PCR</option>
+                                    <option value="3">OTR</option>
+                                    <option value="4">Other</option>
                                 </select>
                             </div>
                         </div>

@@ -2,17 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Language;
+use App\Models\News;
+use App\Models\NewsList;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
-class LanguageController extends Controller{
+class NewsListController extends Controller{
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        //
+        $news = DB::table('t_news')->orderBy('news_date', 'desc')->paginate(2);
+
+        return view('pages/newslist/index', compact('news'));
     }
 
     /**
@@ -30,30 +35,29 @@ class LanguageController extends Controller{
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request){
         //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Language  $language
+     * @param  \App\Models\NewsList  $newsList
      * @return \Illuminate\Http\Response
      */
-    public function show(Language $language)
-    {
-        //
+    public function show($id){
+        $news = DB::table('t_news')->where('news_id','=',$id)->get()[0];
+
+        return view('pages/newslist/detail', compact('news'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Language  $language
+     * @param  \App\Models\NewsList  $newsList
      * @return \Illuminate\Http\Response
      */
-    public function edit(Language $language)
-    {
+    public function edit(NewsList $newsList){
         //
     }
 
@@ -61,22 +65,20 @@ class LanguageController extends Controller{
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Language  $language
+     * @param  \App\Models\NewsList  $newsList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Language $language)
-    {
+    public function update(Request $request, NewsList $newsList){
         //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Language  $language
+     * @param  \App\Models\NewsList  $newsList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Language $language)
-    {
+    public function destroy(NewsList $newsList){
         //
     }
 }
