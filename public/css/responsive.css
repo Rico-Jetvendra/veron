@@ -1135,6 +1135,10 @@
     .rental-block_filter-list li:last-child a:hover:before {
         display: none;
     }
+
+    .modern-menu-wrapper{
+        display: none;
+    }
 }
 
 /* end max-width:991px */
@@ -1203,6 +1207,10 @@
     .bottom-element_white {
         top: 730px;
     }
+
+    .modern-menu-wrapper{
+        display: none;
+    }
 }
 
 /* end max-width:767px */
@@ -1210,6 +1218,10 @@
 @media (max-width:480px) {
     .form-main {
         text-align: center;
+    }
+
+    .modern-menu-wrapper{
+        display: none;
     }
 
     .block-info-header h2,
