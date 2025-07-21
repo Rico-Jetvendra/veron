@@ -5,7 +5,7 @@
       <!-- Slide 1-->
       <div class="sp-slide">
          <div class="b-main-slider__item b-main-slider__item_2">
-            <img class="sp-image" src="{{ asset('media/b-main-slider/1.png') }}" alt="slider" />
+            <img class="sp-image" src="{{ asset('media/b-main-slider/1.png') }}" alt="slider"/>
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">fix your auto, faster</span></div>
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
                <div class="b-main-slider__title">WANT REPAIR CAR?</div>
@@ -441,75 +441,60 @@
       </div>
    </div>
 </div>
-<div class="faq-block block_padding">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-            <div class="ui-wrap-figure">
-               <span class="ui-top-figure"></span>
-            </div>
-         </div>
-         <div class="row">
+<div class="block-repair-news block_padding bg-white">
+    <div class="container">
+        <div class="row">
             <div class="col-xs-12">
-               <div class="faq-block_header">
-                  <h2>Our Service <span>FAQ's</span></h2>
-                  <span>At our workshop vehicle body repair & all related fixes </span>
-               </div>
+                <div class="block-repair-news_header">
+                    <h2>{{ __('newslist.read'); }} <span>{{ __('newslist.news'); }}</span></h2>
+                    <div class="decor"></div>
+                </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-md-6">
-               <div class="faq-block_content">
-                  <details>
-                     <summary>What type of Services do I need?</summary>
-                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
-                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
-                        giusmod tempor incididuntu labore et dolore magna.
-                     </p>
-                  </details>
-                  <details>
-                     <summary>How do I keep track of routine maintenance?</summary>
-                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
-                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
-                        giusmod tempor incididuntu labore et dolore magna.
-                     </p>
-                  </details>
-                  <details>
-                     <summary>What are the latest offers you have currently?</summary>
-                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
-                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
-                        giusmod tempor incididuntu labore et dolore magna.
-                     </p>
-                  </details>
-                  <details>
-                     <summary>How many hours you work daily?</summary>
-                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
-                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
-                        giusmod tempor incididuntu labore et dolore magna.
-                     </p>
-                  </details>
-                  <details>
-                     <summary>How do you repair cars that are accidental?</summary>
-                     <p>Legaster is nisi aliquip consequat duis velit esse cillum dolore fugiat nulla
-                        excepteur sint occaecat. Lorem ipsum dolor sit amet consecter adipisicing
-                        giusmod tempor incididuntu labore et dolore magna.
-                     </p>
-                  </details>
-               </div>
-            </div>
-            <div class="col-md-6">
-               <div class="faq-block_video">
-                  <img src="{{ asset('media/b-gallery/bg-3.jpg') }}"/>
-                  <a href="#">
-                     <div class="faq-block_video-play">
-                        <span><i class="fa fa-play faq-block_icon" aria-hidden="true"></i>Committed To Ensure Full Safety</span>
-                     </div>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+            @foreach ($news as $new)
+                <div class="col-xs-12 col-md-12">
+                    <div class="block-repair-news_post">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{{ asset('storage/thumbnail/' . $new->news_thumbnail) }}" width="150" height="150"/>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="block-repair-news_post_footer">
+                                    <div class="post-autor">
+                                        <div class="post_data">
+                                            <span>{{ date('d F Y', strtotime($new->news_date)) }}</span>
+                                        </div>
+                                        <div class="autor">
+                                            <span>{{ date('H:i:s', strtotime($new->news_date)) }}</span>
+                                        </div>
+                                        <div class="comments">
+                                            <span>Veron</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-post_content">
+                                    <h4><a href="{{ route('newslist.show', $new->news_id) }}" target="_blank">{{ $new->news_title }}</a></h4>
+                                    <p>
+                                        {{ substr(strip_tags($new->news_content), 0, 200).'......'     }}
+                                        <a href="{{ route('newslist.show', $new->news_id) }}" target="_blank">{{ __('newslist.read_more'); }}</a>
+                                    </p>
+                                    <p>Tags :
+                                        @php
+                                            $tags = explode(",",$new->news_tag);
+                                            foreach($tags as $tag){
+                                        @endphp
+                                                <span class="badge"><?= $tag ?></span>
+                                        @php
+                                            }
+                                        @endphp
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
 </div>
 <div class="section-brands bg-gray">
    <div class="b-brands-slider owl-carousel owl-theme enable-owl-carousel"

@@ -7,10 +7,11 @@ return [
     'email_us' => 'Email Us',
     'home' => 'Home',
     'product' => 'Product',
-    'about_us' => 'About Us',
+    'about_us' => 'About',
     'contact' => 'Contact',
     'language' => 'Language',
     'news' => 'News',
     'milestone' => 'Milestone',
+    'us' => 'Us',
 ]
 ?>

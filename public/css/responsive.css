@@ -200,7 +200,8 @@
 
     .header-top,
     .header-middle .col-md-9,
-    .header-bottom {
+    .header-bottom,
+    .modern-menu-wrapper {
         display: none;
     }
 
@@ -448,6 +449,11 @@
 
 
 @media (max-width:767px) {
+
+    .slider-pro img{
+        /* width: 75% !important; */
+        height: auto;
+    }
 
     .b-main-slider .sp-arrow {
         top: -207px;

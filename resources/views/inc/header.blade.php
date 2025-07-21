@@ -36,8 +36,9 @@
             </li>
             <li><a href="{{ route('newslist.index') }}">{{ __('header.news') }}</a></li>
             <li class="dropdown">
-               <a href="{{ route('about.index') }}">{{ __('header.about_us') }}</a>
+               <a href="#">{{ __('header.about_us') }}</a>
                <ul class="dropdown-menu">
+                  <li><a href="{{ route('about.index') }}">{{ __('header.us') }}</a></li>
                   <li><a href="{{ route('milestone') }}">{{ __('header.milestone') }}</a></li>
                </ul>
             </li>
@@ -113,7 +114,7 @@
                   </div>
                </div>
             </div>
-            <div class="header-bottom">
+            <!-- <div class="header-bottom"> -->
                <!-- <div class="col-md-10"> -->
                     <!-- <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav menu-marker-arrow">
                     <li><a href="{{ route('home') }}">{{ __('header.home') }}</a></li>
@@ -150,7 +151,7 @@
                     </ul>
                 </div>
                </div> -->
-            </div>
+            <!-- </div> -->
          </div>
         <div class="modern-menu-wrapper">
             <div class="modern-menu-container">
