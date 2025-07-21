@@ -12,7 +12,6 @@ return [
     'message' => 'Message',
     'send_message' => 'Send Message',
     'main_office' => 'Main Office',
-    'send_messages' => 'Send Messages',
 ];
 
 ?>
