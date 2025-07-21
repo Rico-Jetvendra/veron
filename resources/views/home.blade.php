@@ -5,7 +5,7 @@
       <!-- Slide 1-->
       <div class="sp-slide">
          <div class="b-main-slider__item b-main-slider__item_2">
-            <img class="sp-image" src="{{ asset('media/b-main-slider/slider-rental01.jpg') }}" alt="slider" />
+            <img class="sp-image" src="{{ asset('media/b-main-slider/1.png') }}" alt="slider" />
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">fix your auto, faster</span></div>
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
                <div class="b-main-slider__title">WANT REPAIR CAR?</div>
@@ -22,7 +22,24 @@
       </div>
       <div class="sp-slide">
          <div class="b-main-slider__item b-main-slider__item_2">
-            <img class="sp-image" src="{{ asset('media/b-main-slider/slider-rental02.jpg') }}" alt="slider" />
+            <img class="sp-image" src="{{ asset('media/b-main-slider/2.png') }}" alt="slider" />
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">fix your auto, faster</span></div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
+               <div class="b-main-slider__title">WANT REPAIR CAR 123?</div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="800" data-hide-delay="400">
+               <div class="b-main-slider__info">We deliver highest level of satisfaction
+                  through superior workmanship
+               </div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400">
+               <div class="b-main-slider__btns"><span class="b-main-slider__btn">What We Offers</span></div>
+            </div>
+         </div>
+      </div>
+      <div class="sp-slide">
+         <div class="b-main-slider__item b-main-slider__item_2">
+            <img class="sp-image" src="{{ asset('media/b-main-slider/3.png') }}" alt="slider" />
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">fix your auto, faster</span></div>
             <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
                <div class="b-main-slider__title">WANT REPAIR CAR 123?</div>

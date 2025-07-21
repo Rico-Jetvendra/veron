@@ -115,6 +115,27 @@
             </div>
             <div class="header-bottom">
                <!-- <div class="col-md-10"> -->
+                    <!-- <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav menu-marker-arrow">
+                    <li><a href="{{ route('home') }}">{{ __('header.home') }}</a></li>
+                    <li class="dropdown">
+                        <a href="#">{{ __('header.product') }}</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ route('productlist.show', '1') }}">Sailun</a></li>
+                            <li><a href="{{ route('productlist.show', '2') }}">Neolin</a></li>
+                            <li><a href="{{ route('productlist.show', '3') }}">Superfleet</a></li>
+                            <li><a href="{{ route('productlist.show', '4') }}">Dynamaxx</a></li>
+                            <li><a href="{{ route('productlist.show', '5') }}">Cemax</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ route('newslist.index') }}">{{ __('header.news') }}</a></li>
+                    <li class="dropdown">
+                        <a href="{{ route('about.index') }}">{{ __('header.about_us') }}</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ route('milestone') }}">{{ __('header.milestone') }}</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ route('contact.index') }}">{{ __('header.contact') }}</a></li>
+                    </ul> -->
                <!-- </div>
                <div class="col-md-2">
                 <div class="nav header-navbar header-2">
@@ -131,80 +152,58 @@
                </div> -->
             </div>
          </div>
-
-                  <div class="modern-menu-wrapper">
-                     <!-- <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav menu-marker-arrow">
-                        <li><a href="{{ route('home') }}">{{ __('header.home') }}</a></li>
-                        <li class="dropdown">
-                           <a href="#">{{ __('header.product') }}</a>
-                           <ul class="dropdown-menu">
-                                <li><a href="{{ route('productlist.show', '1') }}">Sailun</a></li>
-                                <li><a href="{{ route('productlist.show', '2') }}">Neolin</a></li>
-                                <li><a href="{{ route('productlist.show', '3') }}">Superfleet</a></li>
-                                <li><a href="{{ route('productlist.show', '4') }}">Dynamaxx</a></li>
-                                <li><a href="{{ route('productlist.show', '5') }}">Cemax</a></li>
-                           </ul>
-                        </li>
-                        <li><a href="{{ route('newslist.index') }}">{{ __('header.news') }}</a></li>
-                        <li class="dropdown">
-                            <a href="{{ route('about.index') }}">{{ __('header.about_us') }}</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ route('milestone') }}">{{ __('header.milestone') }}</a></li>
+        <div class="modern-menu-wrapper">
+            <div class="modern-menu-container">
+            <ul class="modern-menu modern-menu-left">
+                <li><a href="{{ route('home') }}">{{ __('header.home') }}</a></li>
+                <li>
+                    <a href="#">{{ __('header.product') }} ▾</a>
+                    <ul>
+                        <li>
+                            <a href="{{ route('productlist.show', '1') }}">Sailun ▸</a>
+                            <ul>
+                                <li><a href="{{ route('productlist.submenu', ['productlist' => '1', 'id' => '1']) }}">TBR / LTR</a></li>
+                                <li><a href="{{ route('productlist.submenu', ['productlist' => '1', 'id' => '2']) }}">PCR</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ route('contact.index') }}">{{ __('header.contact') }}</a></li>
-                     </ul> -->
-                     <div class="modern-menu-container">
-                        <ul class="modern-menu modern-menu-left">
-                            <li><a href="{{ route('home') }}">{{ __('header.home') }}</a></li>
-                            <li>
-                                <a href="#">{{ __('header.product') }} ▾</a>
-                                <ul>
-                                    <li>
-                                        <a href="{{ route('productlist.show', '1') }}">Sailun ▸</a>
-                                        <ul>
-                                            <li><a href="{{ route('productlist.submenu', ['productlist' => '1', 'id' => '1']) }}">TBR / LTR</a></li>
-                                            <li><a href="{{ route('productlist.submenu', ['productlist' => '1', 'id' => '2']) }}">PCR</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('productlist.show', '2') }}">Neolin ▸</a>
-                                        <ul>
-                                            <li><a href="{{ route('productlist.submenu', ['productlist' => '2', 'id' => '1']) }}">TBR / LTR</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('productlist.show', '3') }}">Superfleet ▸</a>
-                                        <ul>
-                                            <li><a href="{{ route('productlist.submenu', ['productlist' => '3', 'id' => '1']) }}">TBR / LTR</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="{{ route('productlist.show', '4') }}">Dynamaxx ▸</a>
-                                        <ul>
-                                            <li><a href="{{ route('productlist.submenu', ['productlist' => '4', 'id' => '3']) }}">OTR</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="{{ route('productlist.show', '5') }}">Cemax</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="{{ route('newslist.index') }}">{{ __('header.news') }}</a></li>
-                            <li>
-                                <a href="{{ route('about.index') }}">{{ __('header.about_us') }} ▾</a>
-                                <ul>
-                                    <li><a href="{{ route('milestone') }}">{{ __('header.milestone') }}</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="{{ route('contact.index') }}">{{ __('header.contact') }}</a></li>
-                        </ul>
-                        <ul class="modern-menu modern-menu-right">
-                            <li style="float:right;">
-                                <a href="#">{{ __('header.language') }} ▾</a>
-                                <ul>
-                                    <li><a href="{{ url('/lang/id') }}"><img src="{{ asset('media/flag/indonesia.webp') }}" width="20"> Indonesian</a></li>
-                                    <li><a href="{{ url('/lang/en') }}"><img src="{{ asset('media/flag/english.png') }}" width="20"> English</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                     </div>
-                  </div>
+                        <li>
+                            <a href="{{ route('productlist.show', '2') }}">Neolin ▸</a>
+                            <ul>
+                                <li><a href="{{ route('productlist.submenu', ['productlist' => '2', 'id' => '1']) }}">TBR / LTR</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{{ route('productlist.show', '3') }}">Superfleet ▸</a>
+                            <ul>
+                                <li><a href="{{ route('productlist.submenu', ['productlist' => '3', 'id' => '1']) }}">TBR / LTR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ route('productlist.show', '4') }}">Dynamaxx ▸</a>
+                            <ul>
+                                <li><a href="{{ route('productlist.submenu', ['productlist' => '4', 'id' => '3']) }}">OTR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ route('productlist.show', '5') }}">Cemax</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ route('newslist.index') }}">{{ __('header.news') }}</a></li>
+                <li>
+                    <a href="{{ route('about.index') }}">{{ __('header.about_us') }} ▾</a>
+                    <ul>
+                        <li><a href="{{ route('milestone') }}">{{ __('header.milestone') }}</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ route('contact.index') }}">{{ __('header.contact') }}</a></li>
+            </ul>
+            <ul class="modern-menu modern-menu-right">
+                <li style="float:right;">
+                    <a href="#">{{ __('header.language') }} ▾</a>
+                    <ul>
+                        <li><a href="{{ url('/lang/id') }}"><img src="{{ asset('media/flag/indonesia.webp') }}" width="20"> Indonesian</a></li>
+                        <li><a href="{{ url('/lang/en') }}"><img src="{{ asset('media/flag/english.png') }}" width="20"> English</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
       </header>

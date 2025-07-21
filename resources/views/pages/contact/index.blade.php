@@ -76,7 +76,7 @@
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <input type="submit" class="btn btn-block btn-bdr-prim" value="send message">
+                                <input type="submit" class="btn btn-block btn-bdr-prim" value="{{ __('contact.send_messages') }}">
                             </div>
                         </div>
                     </div>

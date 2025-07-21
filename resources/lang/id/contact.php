@@ -12,6 +12,7 @@ return [
     'message' => 'Pesan',
     'send_message' => 'Kirim Pesan',
     'main_office' => 'Kantor Utama',
+    'send_messages' => 'Kirim Pesan',
 ];
 
 ?>
