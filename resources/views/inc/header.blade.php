@@ -115,6 +115,23 @@
             </div>
             <div class="header-bottom">
                <!-- <div class="col-md-10"> -->
+               <!-- </div>
+               <div class="col-md-2">
+                <div class="nav header-navbar header-2">
+                    <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav menu-marker-arrow" style="float:right;">
+                        <li class="dropdown">
+                           <a href="blog.html">{{ __('header.language') }}</a>
+                           <ul class="dropdown-menu">
+                              <li><a href="{{ url('/lang/id') }}"><img src="{{ asset('media/flag/indonesia.webp') }}" width="20"> Indonesia</a></li>
+                              <li><a href="{{ url('/lang/en') }}"><img src="{{ asset('media/flag/english.png') }}" width="20"> English</a></li>
+                           </ul>
+                        </li>
+                    </ul>
+                </div>
+               </div> -->
+            </div>
+         </div>
+
                   <div class="modern-menu-wrapper">
                      <!-- <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav menu-marker-arrow">
                         <li><a href="{{ route('home') }}">{{ __('header.home') }}</a></li>
@@ -190,20 +207,4 @@
                         </ul>
                      </div>
                   </div>
-               <!-- </div>
-               <div class="col-md-2">
-                <div class="nav header-navbar header-2">
-                    <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav menu-marker-arrow" style="float:right;">
-                        <li class="dropdown">
-                           <a href="blog.html">{{ __('header.language') }}</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="{{ url('/lang/id') }}"><img src="{{ asset('media/flag/indonesia.webp') }}" width="20"> Indonesia</a></li>
-                              <li><a href="{{ url('/lang/en') }}"><img src="{{ asset('media/flag/english.png') }}" width="20"> English</a></li>
-                           </ul>
-                        </li>
-                    </ul>
-                </div>
-               </div> -->
-            </div>
-         </div>
       </header>
