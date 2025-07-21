@@ -451,8 +451,7 @@
 @media (max-width:767px) {
 
     .slider-pro img{
-        /* width: 75% !important; */
-        height: auto;
+        height: 50% !important;
     }
 
     .b-main-slider .sp-arrow {
