@@ -15,11 +15,9 @@
                   through superior workmanship
                </div>
             </div>
-            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400">
-               <div class="b-main-slider__btns"><span class="b-main-slider__btn">What We Offers</span></div>
-            </div>
          </div>
       </div>
+      <!-- Slide 2-->
       <div class="sp-slide">
          <div class="b-main-slider__item b-main-slider__item_2">
             <img class="sp-image" src="{{ asset('media/b-main-slider/2.png') }}" alt="slider" />
@@ -32,11 +30,9 @@
                   through superior workmanship
                </div>
             </div>
-            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400">
-               <div class="b-main-slider__btns"><span class="b-main-slider__btn">What We Offers</span></div>
-            </div>
          </div>
       </div>
+      <!-- Slide 3-->
       <div class="sp-slide">
          <div class="b-main-slider__item b-main-slider__item_2">
             <img class="sp-image" src="{{ asset('media/b-main-slider/3.png') }}" alt="slider" />
@@ -49,15 +45,12 @@
                   through superior workmanship
                </div>
             </div>
-            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400">
-               <div class="b-main-slider__btns"><span class="b-main-slider__btn">What We Offers</span></div>
-            </div>
          </div>
       </div>
    </div>
 </div>
 <!-- end b-main-slider -->
-<div class="block_repairs ">
+<!-- <div class="block_repairs ">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
@@ -140,7 +133,7 @@
          </div>
       </div>
    </div>
-</div>
+</div> -->
 <!-- <div class="block-banner">
    <div class="row">
       <div class="col-md-6">
@@ -268,8 +261,8 @@
       <div class="row">
          <div class="col-xs-12">
             <div class="info-block_header">
-               <h2>We Repair Your  <span>Vehicle</span></h2>
-               <span>Best vehicle body repair & all related fixes</span>
+               <h2>{{ __('header.types') }}  <span>{{ __('header.tire') }}</span></h2>
+               <span>{{ __('header.tire_types') }}</span>
                <div class="decor"></div>
             </div>
          </div>
@@ -277,7 +270,6 @@
             <div class="info-block_choose">
                <div class="col-md-3">
                   <div class="info-block_choose-item">
-                     <!-- <div class="glyph-icon flaticon-car-suv info-block_icon"></div> -->
                       <img src="{{ asset('media/b-icons/truck.png') }}" width="200" height="200">
                      <span style="margin-top:10px;">TRUCKS</span>
                   </div>
@@ -308,10 +300,9 @@
                   <a href="#" class="block_banner_link">
                      <div class="block_banner">
                         <div class="glyph-icon flaticon-suspension info-block_banner-icon"></div>
-                        <div class="block-banner_content">
-                           <h3>Brakes Repair</h3>
-                           <span>Corem ipsum dolor it amet consec exea
-                           dolore fugiatmagna exerd.</span>
+                        <div class="block-banner_content" style="text-align: justify;">
+                           <h3>TBR (Truck & Bus Radial) / LTR (Light Truck Radial)</h3>
+                           <span>{{ __('header.tbr') }}</span>
                         </div>
                      </div>
                   </a>
@@ -319,11 +310,10 @@
                <div class="col-md-4">
                   <a href="#" class="block_banner_link">
                      <div class="block_banner">
-                        <div class="glyph-icon flaticon-engine info-block_banner-icon"></div>
-                        <div class="block-banner_content">
-                           <h3>Head Gaskets</h3>
-                           <span>Corem ipsum dolor it amet consec exea
-                           dolore fugiatmagna exerd.</span>
+                        <div class="glyph-icon flaticon-suspension info-block_banner-icon"></div>
+                        <div class="block-banner_content" style="text-align: justify;">
+                           <h3>PCR (Passenger Car Radial)</h3>
+                           <span>{{ __('header.pcr') }} </span>
                         </div>
                      </div>
                   </a>
@@ -331,47 +321,10 @@
                <div class="col-md-4">
                   <a href="#" class="block_banner_link">
                      <div class="block_banner">
-                        <div class="glyph-icon flaticon-dashboard info-block_banner-icon"></div>
-                        <div class="block-banner_content">
-                           <h3>General Service</h3>
-                           <span>Corem ipsum dolor it amet consec exea
-                           dolore fugiatmagna exerd.</span>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4">
-                  <a href="#" class="block_banner_link">
-                     <div class="block_banner">
-                        <div class="glyph-icon flaticon-gearshift info-block_banner-icon"></div>
-                        <div class="block-banner_content">
-                           <h3>Transmission Fix</h3>
-                           <span>Corem ipsum dolor it amet consec exea
-                           dolore fugiatmagna exerd.</span>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4">
-                  <a href="#" class="block_banner_link">
-                     <div class="block_banner">
-                        <div class="glyph-icon flaticon-checklist info-block_banner-icon"></div>
-                        <div class="block-banner_content">
-                           <h3>Electric Breakdown</h3>
-                           <span>Corem ipsum dolor it amet consec exea
-                           dolore fugiatmagna exerd.</span>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4">
-                  <a href="#" class="block_banner_link">
-                     <div class="block_banner">
-                        <div class="glyph-icon flaticon-oil info-block_banner-icon"></div>
-                        <div class="block-banner_content">
-                           <h3>Oil Changing</h3>
-                           <span>Corem ipsum dolor it amet consec exea
-                           dolore fugiatmagna exerd.</span>
+                        <div class="glyph-icon flaticon-suspension info-block_banner-icon"></div>
+                        <div class="block-banner_content" style="text-align: justify;">
+                           <h3>OTR (Off-The-Road)</h3>
+                           <span>{{ __('header.otr') }}</span>
                         </div>
                      </div>
                   </a>
@@ -420,7 +373,7 @@
       </div>
    </div>
 </div> -->
-<div class="contact-block block_padding">
+<!-- <div class="contact-block block_padding">
    <div class="container">
       <div class="row">
          <div class="col-xs-12">
@@ -440,7 +393,7 @@
          </div>
       </div>
    </div>
-</div>
+</div> -->
 <div class="block-repair-news block_padding bg-white">
     <div class="container">
         <div class="row">

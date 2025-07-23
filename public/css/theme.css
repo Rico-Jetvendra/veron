@@ -1649,11 +1649,13 @@ background-attachment: fixed;
   color: #fff;
   text-transform: uppercase;
   margin-left: 60%;
+  text-shadow: 1px 1px #000;
 }
 .b-main-slider__subtitle {
   margin-bottom: 25px;
   font-size: 26px;
   font-weight: 600;
+  text-shadow: 1px 1px #000;
 }
 .b-main-slider__info {
   margin-bottom: 30px;
@@ -1662,6 +1664,8 @@ background-attachment: fixed;
   letter-spacing: .33px;
   margin-left: 60%;
   padding-right: 9%;
+  color:#fff;
+  text-shadow: 1px 1px #000;
 }
 .b-main-slider__price,
 .b-main-slider__btn {
@@ -1698,6 +1702,7 @@ background-attachment: fixed;
   text-transform: uppercase;
   padding-top: 10vw;
   margin-left: 60%;
+  text-shadow: 1px 1px #000;
 }
 .b-main-slider__label:after {
   display: inline-block;

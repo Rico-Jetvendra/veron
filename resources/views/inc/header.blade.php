@@ -25,7 +25,7 @@
          <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav  menu-marker-arrow">
             <li><a href="{{ route('home') }}">Home</a></li>
             <li class="dropdown">
-               <a href="#">Products</a>
+               <a href="#">{{ __('header.product') }}</a>
                <ul class="dropdown-menu">
                   <li><a href="{{ route('productlist.show', '1') }}">Sailun</a></li>
                   <li><a href="{{ route('productlist.show', '2') }}">Neolin</a></li>
