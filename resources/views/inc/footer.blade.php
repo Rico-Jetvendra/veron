@@ -52,7 +52,7 @@
       <div class="row">
          <div class="col-xs-12">
             <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
-            <div class="copyright">Copyrights 2025 <span class="copyright__brand">Veron Indonesia</span> : All rights reserved. <br/>Icon made by <a href="https://www.flaticon.com/authors/iconjam" target="_blank">Iconjam</a> from www.flaticon.com</div>
+            <div class="copyright">Copyrights 2025 <span class="copyright__brand">Veron Indonesia</span> : All rights reserved. <br/>Icon made by <a href="https://www.flaticon.com/authors/iconjam" target="_blank">Iconjam</a> and <a href="https://www.flaticon.com/free-icons/tyre" title="tyre icons">Sohell</a> from www.flaticon.com</div>
          </div>
       </div>
    </div>

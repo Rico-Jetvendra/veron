@@ -299,9 +299,9 @@
                <div class="col-md-4">
                   <a href="#" class="block_banner_link">
                      <div class="block_banner">
-                        <div class="glyph-icon flaticon-suspension info-block_banner-icon"></div>
+                        <img class="info-block_banner-icon" src="{{ asset('media/b-icons/tyre.png') }}" width="64" height="64   ">
                         <div class="block-banner_content" style="text-align: justify;">
-                           <h3>TBR (Truck & Bus Radial) / LTR (Light Truck Radial)</h3>
+                           <h3>TBR (Truck & Bus Radial)</h3>
                            <span>{{ __('header.tbr') }}</span>
                         </div>
                      </div>
@@ -310,7 +310,7 @@
                <div class="col-md-4">
                   <a href="#" class="block_banner_link">
                      <div class="block_banner">
-                        <div class="glyph-icon flaticon-suspension info-block_banner-icon"></div>
+                        <img class="info-block_banner-icon" src="{{ asset('media/b-icons/tyre.png') }}" width="64" height="64   ">
                         <div class="block-banner_content" style="text-align: justify;">
                            <h3>PCR (Passenger Car Radial)</h3>
                            <span>{{ __('header.pcr') }} </span>
@@ -321,7 +321,7 @@
                <div class="col-md-4">
                   <a href="#" class="block_banner_link">
                      <div class="block_banner">
-                        <div class="glyph-icon flaticon-suspension info-block_banner-icon"></div>
+                        <img class="info-block_banner-icon" src="{{ asset('media/b-icons/tyre.png') }}" width="64" height="64   ">
                         <div class="block-banner_content" style="text-align: justify;">
                            <h3>OTR (Off-The-Road)</h3>
                            <span>{{ __('header.otr') }}</span>
