@@ -31,7 +31,7 @@
                     <div class="block-repair-news_post">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="{{ asset('storage/thumbnail/' . $new->news_thumbnail) }}" width="300" height="250"/>
+                                <img src="{{ asset('storage/thumbnail/' . $new->news_thumbnail) }}" width="300" height="250" style="object-fit: cover;"/>
                             </div>
                             <div class="col-md-8">
                                 <div class="block-repair-news_post_footer">
