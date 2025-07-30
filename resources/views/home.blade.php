@@ -408,7 +408,7 @@
                     <div class="block-repair-news_post">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="{{ asset('storage/thumbnail/' . $new->news_thumbnail) }}" width="150" height="150"/>
+                                <img src="{{ asset('storage/thumbnail/' . $new->news_thumbnail) }}" style="object-fit: contain;"/>
                             </div>
                             <div class="col-md-9">
                                 <div class="block-repair-news_post_footer">
