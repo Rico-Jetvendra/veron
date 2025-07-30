@@ -74,7 +74,7 @@
                             <div class="col-md-4 card">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="{{ asset('storage/uploads/' . $pr->product_photo) }}" title="{{ $pr->product_name }}" width="100px" height="150px" style="object-fit: cover;">
+                                        <img src="{{ asset('storage/uploads/' . $pr->product_photo) }}" title="{{ $pr->product_name }}" style="object-fit: cover;">
                                     </div>
                                     <div class="col-md-6">
                                         <label>{{ $pr->product_code }} ({{ $pr->product_size }}mm)</label><br/>
